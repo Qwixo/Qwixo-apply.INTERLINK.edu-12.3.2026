@@ -238,7 +238,7 @@ function GreensboroPage() {
                   <div className="space-y-2">
             
                   </div>
-                  <p className="font-semibold mt-4">
+                  <p className="font-semibold mt-5">
                     You've probably wondered: What am I doing wrong?
                   </p>
                 </div>
