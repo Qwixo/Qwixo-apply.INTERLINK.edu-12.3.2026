@@ -234,14 +234,9 @@ function GreensboroPage() {
                 </div>
 
                 <div className="text-sm text-gray-700">
-                  <p className="font-semibold mb-3">
-                    Many students have felt the same discomfort while learning English:
-                  </p>
+
                   <div className="space-y-2">
-                    <p>• The hesitation before you speak</p>
-                    <p>• The frustration when someone doesn't understand you</p>
-                    <p>• The embarrassment when you say something and it doesn't come out right</p>
-                    <p>• The stress of always second-guessing yourself</p>
+
                   </div>
                   <p className="font-semibold mt-4">
                     You've probably wondered: What am I doing wrong?
@@ -313,46 +308,34 @@ function GreensboroPage() {
                     <div className="w-10 h-10 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
                       <Check className="w-5 h-5 text-white" strokeWidth={3} />
                     </div>
-                    <p className="text-lg font-semibold text-gray-900">Live teacher</p>
+                    <p className="text-lg font-semibold text-gray-900">Express your ideas clearly</p>
                   </div>
 
                   <div className="flex items-center gap-3 mb-3">
                     <div className="w-10 h-10 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
                       <Check className="w-5 h-5 text-white" strokeWidth={3} />
                     </div>
-                    <p className="text-lg font-semibold text-gray-900">Small groups</p>
+                    <p className="text-lg font-semibold text-gray-900">Ask and answer questions without freezing up</p>
                   </div>
 
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
+                      <Check className="w-5 h-5 text-white" strokeWidth={3} />
+                    </div>
+                    <p className="text-lg font-semibold text-gray-900">Follow a fast conversation and stay in it.</p>
+                  </div>
+
+                  
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
                       <Check className="w-5 h-5 text-white" strokeWidth={3} />
                     </div>
-                    <p className="text-lg font-semibold text-gray-900">Daily speaking</p>
+                    <p className="text-lg font-semibold text-gray-900">Know what went wrong and how to do better next time and the confidence to keep trying.</p>
                   </div>
                 </div>
 
                 {/* Outcomes */}
-                <div className="border-t border-gray-200 pt-4">
-                  <p className="text-sm font-semibold text-gray-600 mb-3">What you'll be able to do:</p>
-                  <div className="space-y-2">
-                    <div className="flex items-start gap-2">
-                      <span className="text-[#dc5d33] font-bold flex-shrink-0">•</span>
-                      <p className="text-sm text-gray-700">Express your ideas clearly</p>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <span className="text-[#dc5d33] font-bold flex-shrink-0">•</span>
-                      <p className="text-sm text-gray-700">Ask and answer questions without freezing up.</p>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <span className="text-[#dc5d33] font-bold flex-shrink-0">•</span>
-                      <p className="text-sm text-gray-700">Follow a fast conversation and stay in it.</p>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <span className="text-[#dc5d33] font-bold flex-shrink-0">•</span>
-                      <p className="text-sm text-gray-700">Know what went wrong and how to do better next time – and the confidence to keep trying.</p>
-                    </div>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>
