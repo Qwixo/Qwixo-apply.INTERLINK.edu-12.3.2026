@@ -335,8 +335,6 @@ function GreensboroPage() {
                 </div>
 
                 {/* Outcomes */}
-                <div className="border-t border-gray-200 pt-4">
-                  <div className="space-y-2">
                     <div className="flex items-start gap-2">
                     </div>
                     <div className="flex items-start gap-2">
