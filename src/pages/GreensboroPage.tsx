@@ -11,6 +11,7 @@ function GreensboroPage() {
   const [showBanner, setShowBanner] = useState(true);
   const [formData, setFormData] = useState({
     firstName: '',
+    lastName: '',
     email: '',
     commitment: ''
   });
@@ -54,6 +55,7 @@ function GreensboroPage() {
     data.append('u', '607289d66021f9dbd8e30d04c');
     data.append('id', 'f16b13f8cc');
     data.append('FNAME', formData.firstName);
+    data.append('LNAME', formData.lastName);
     data.append('EMAIL', formData.email);
     data.append('MMERGE13', 'greensboro-application');
 
@@ -773,7 +775,7 @@ function GreensboroPage() {
               How to apply
             </h2>
             <p className="text-base text-gray-700">
-              3 simple steps. We help you.
+              We'll help you through our simple process
             </p>
           </div>
 
@@ -786,10 +788,10 @@ function GreensboroPage() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-base font-bold text-gray-900 mb-0.5">
-                    Fill in the application
+                    Submit an application
                   </h3>
                   <p className="text-gray-700 text-sm">
-                    Send your application and your supporting documents.
+                    Complete the application and upload your supporting documents. We'll carefully review your application and contact you.
                   </p>
                 </div>
               </div>
@@ -806,7 +808,7 @@ function GreensboroPage() {
                     Pay the application fee
                   </h3>
                   <p className="text-gray-700 text-sm">
-                    Pay online after you apply. If you get stuck, we help.
+                    Pay your application fee after you apply. Contact us if you need assistance.
                   </p>
                 </div>
               </div>
@@ -820,10 +822,10 @@ function GreensboroPage() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-base font-bold text-gray-900 mb-0.5">
-                    Placement test
+                    Take a placement test
                   </h3>
                   <p className="text-gray-700 text-sm">
-                    We schedule your placement test and place you in the right level.
+                    We'll send you the link to your test once you've paid your application fee
                   </p>
                 </div>
               </div>
@@ -831,8 +833,8 @@ function GreensboroPage() {
           </div>
 
           <div className="text-center mb-5">
-            <p className="text-gray-700 font-medium text-sm">
-              Then you start class and speak every day.
+            <p className="text-gray-900 font-bold text-lg md:text-xl">
+              Then, you're ready to start your classes!
             </p>
           </div>
 
@@ -865,19 +867,19 @@ function GreensboroPage() {
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
                   <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-gray-700">You are in Greensboro (or nearby).</span>
+                  <span className="text-sm text-gray-700">You know fluent English opens doors to better jobs and opportunities</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-gray-700">You want to speak English with confidence.</span>
+                  <span className="text-sm text-gray-700">You want critical thinking, problem-solving, and collaboration skills that employers are actually looking for</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-gray-700">You can show up and do the work.</span>
+                  <span className="text-sm text-gray-700">You want to be university-ready, not just meet the minimum requirements</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-gray-700">You want real progress, not slow tips.</span>
+                  <span className="text-sm text-gray-700">You're ready to put in the work to speak with real confidence</span>
                 </li>
               </ul>
             </div>
@@ -894,15 +896,15 @@ function GreensboroPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-lg text-red-600 flex-shrink-0 leading-none">×</span>
-                  <span className="text-sm text-gray-700">You do not want to speak in class.</span>
+                  <span className="text-sm text-gray-700">You do not want to participate in class.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-lg text-red-600 flex-shrink-0 leading-none">×</span>
-                  <span className="text-sm text-gray-700">You want 'free only' learning.</span>
+                  <span className="text-sm text-gray-700">You want free classes</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-lg text-red-600 flex-shrink-0 leading-none">×</span>
-                  <span className="text-sm text-gray-700">You won't show up 5 days a week.</span>
+                  <span className="text-sm text-gray-700">You're not ready to commit to daily classes</span>
                 </li>
               </ul>
             </div>
@@ -913,7 +915,7 @@ function GreensboroPage() {
               onClick={scrollToApply}
               className="bg-[#dc5d33] text-white font-bold text-base px-6 py-3 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
             >
-              I'm serious. Let's do it
+              Get started
             </button>
           </div>
         </div>
@@ -927,7 +929,7 @@ function GreensboroPage() {
               Choose your path
             </h2>
             <p className="text-base text-gray-700">
-              One keeps you stuck. One fixes it.
+              Are you ready to make real progress?
             </p>
           </div>
 
@@ -935,67 +937,64 @@ function GreensboroPage() {
             {/* Left card: Keep struggling */}
             <div className="bg-gray-200 rounded-xl p-5 shadow-md">
               <h3 className="text-lg font-bold text-gray-900 mb-4">
-                Keep struggling
+                Keep struggling with free programs
               </h3>
               <ul className="space-y-2 mb-5">
                 <li className="flex items-start gap-2">
                   <span className="text-gray-700">•</span>
-                  <span className="text-sm text-gray-700">You freeze when people talk fast.</span>
+                  <span className="text-sm text-gray-700">No real interaction</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-gray-700">•</span>
-                  <span className="text-sm text-gray-700">You avoid speaking at work.</span>
+                  <span className="text-sm text-gray-700">No critical thinking or learning skills</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-gray-700">•</span>
-                  <span className="text-sm text-gray-700">You feel small and not taken seriously.</span>
+                  <span className="text-sm text-gray-700">No results after long hours of studying</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-gray-700">•</span>
-                  <span className="text-sm text-gray-700">Weeks pass. Nothing changes.</span>
+                  <span className="text-sm text-gray-700">No feedback to help you improve</span>
                 </li>
               </ul>
-              <a
-                href="https://www.youtube.com/results?search_query=free+english+course"
-                target="_blank"
-                rel="noreferrer"
-                className="block w-full bg-gray-500 text-white font-bold text-base px-6 py-3 rounded-lg hover:bg-gray-600 transition-all duration-300 text-center"
+              <span
+                className="block w-full bg-gray-500 text-white font-bold text-base px-6 py-3 rounded-lg text-center cursor-default"
               >
                 Keep watching free videos
-              </a>
+              </span>
             </div>
 
             {/* Right card: Commit to real practice */}
             <div className="bg-[#064088] rounded-xl p-5 shadow-lg">
               <h3 className="text-lg font-bold text-white mb-4">
-                Commit to real practice
+                Start building relevant skills with INTERLINK
               </h3>
               <ul className="space-y-2 mb-5">
                 <li className="flex items-start gap-2">
                   <span className="text-white">•</span>
-                  <span className="text-sm text-white">Live class, Monday–Friday</span>
+                  <span className="text-sm text-white">Daily, real-world practice</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-white">•</span>
-                  <span className="text-sm text-white">You speak every day</span>
+                  <span className="text-sm text-white">Critical thinking skills for academic and professional success</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-white">•</span>
-                  <span className="text-sm text-white">Small groups + feedback</span>
+                  <span className="text-sm text-white">Collaboration with real classmates</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-white">•</span>
-                  <span className="text-sm text-white">Clear level placement</span>
+                  <span className="text-sm text-white">Personalized feedback from expert instructors</span>
                 </li>
               </ul>
               <button
                 onClick={scrollToApply}
                 className="w-full bg-[#dc5d33] text-white font-bold text-base px-6 py-3 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5 mb-2"
               >
-                Start real practice
+                Make progress towards your goals
               </button>
               <p className="text-center text-xs text-white font-medium">
-                Serious students only.
+                If you're serious about your English skills, apply today and save!
               </p>
             </div>
           </div>
@@ -1014,24 +1013,40 @@ function GreensboroPage() {
                     Apply in minutes
                   </h2>
                   <p className="text-base text-gray-700">
-                    If you are serious, start here.
+                    If you're serious, we're ready to help you get started
                   </p>
                 </div>
 
                 <form onSubmit={handleFormSubmit} className="space-y-4">
-                  <div>
-                    <label htmlFor="firstName" className="block text-sm font-semibold text-gray-900 mb-1">
-                      First name <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      id="firstName"
-                      name="firstName"
-                      value={formData.firstName}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-3 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064088] focus:border-transparent text-sm"
-                    />
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                      <label htmlFor="firstName" className="block text-sm font-semibold text-gray-900 mb-1">
+                        First Name <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        value={formData.firstName}
+                        onChange={handleInputChange}
+                        required
+                        className="w-full px-3 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064088] focus:border-transparent text-sm"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="lastName" className="block text-sm font-semibold text-gray-900 mb-1">
+                        Last Name <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        value={formData.lastName}
+                        onChange={handleInputChange}
+                        required
+                        className="w-full px-3 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064088] focus:border-transparent text-sm"
+                      />
+                    </div>
                   </div>
 
                   <div>
@@ -1051,7 +1066,7 @@ function GreensboroPage() {
 
                   <div>
                     <label htmlFor="commitment" className="block text-sm font-semibold text-gray-900 mb-1">
-                      Are you willing to commit and take learning English seriously? <span className="text-red-500">*</span>
+                      Are you ready to study 5 days/week? <span className="text-red-500">*</span>
                     </label>
                     <select
                       id="commitment"
@@ -1062,9 +1077,9 @@ function GreensboroPage() {
                       className="w-full px-3 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064088] focus:border-transparent text-sm"
                     >
                       <option value="">Select an option</option>
-                      <option value="yes">Yes, I will show up</option>
-                      <option value="maybe">I have questions first</option>
-                      <option value="not-now">No</option>
+                      <option value="yes">Yes</option>
+                      <option value="maybe">I'm not sure yet</option>
+                      <option value="not-now">Maybe later</option>
                     </select>
                   </div>
 
