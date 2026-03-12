@@ -1133,10 +1133,10 @@ function GreensboroPage() {
   <div className="max-w-4xl mx-auto px-4">
     <div className="text-center mb-5">
       <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
-        Common questions
+        Frequently Asked Questions
       </h2>
       <p className="text-gray-700 text-sm">
-        Simple answers. No confusing words.
+        Here are the most common questions students ask before applying to INTERLINK. Click to expand each question for details.
       </p>
     </div>
 
@@ -1152,7 +1152,7 @@ function GreensboroPage() {
         </button>
         {openFAQ === 1 && (
           <div className="px-4 pb-4">
-            <p className="text-gray-700">On campus at UNCG in Greensboro.</p>
+            <p className="text-gray-700">We have classes on campus at University of North Carolina Greensboro. We also have online classes.</p>
           </div>
         )}
       </div>
@@ -1163,15 +1163,16 @@ function GreensboroPage() {
           onClick={() => toggleFAQ(2)}
           className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-100 transition-colors"
         >
-          <span className="text-base font-semibold text-gray-900">When are classes?</span>
+          <span className="text-base font-semibold text-gray-900">What is the class schedule?</span>
           <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 2 ? 'rotate-180' : ''}`} />
         </button>
         {openFAQ === 2 && (
           <div className="px-4 pb-4">
             <p className="text-gray-700">
-              Monday to Friday (Eastern Time).<br />
-              Reading &amp; Writing: 9:30–11:30 AM<br />
-              Communication Skills: 12:30–2:30 PM
+              Classes are Monday through Friday.<br />
+              Reading &amp; Writing: 9:30 - 11:30 AM<br />
+              Communication Skills: 12:30 - 2:30 PM<br />
+              <span className="text-xs text-gray-600">(Listed in Eastern Time)</span>
             </p>
           </div>
         )}
@@ -1183,14 +1184,16 @@ function GreensboroPage() {
           onClick={() => toggleFAQ(3)}
           className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-100 transition-colors"
         >
-          <span className="text-base font-semibold text-gray-900">What is part-time vs full-time?</span>
+          <span className="text-base font-semibold text-gray-900">What is the difference between full time and part time?</span>
           <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 3 ? 'rotate-180' : ''}`} />
         </button>
         {openFAQ === 3 && (
           <div className="px-4 pb-4">
             <p className="text-gray-700">
-              Full-time: 4 hours a day (both classes).<br />
-              Part-time: 2 hours a day (choose ONE class block).
+              Full-time: 4 hours each day (2 classes).<br />
+              Part-time: 2 hours each day (choose ONE class).<br />
+              Reading &amp; Writing: 9:30 - 11:30 AM<br />
+              Communication Skills: 12:30 - 2:30 PM
             </p>
           </div>
         )}
@@ -1208,8 +1211,7 @@ function GreensboroPage() {
         {openFAQ === 4 && (
           <div className="px-4 pb-4">
             <p className="text-gray-700">
-              Full-time: $1,700 per 5-week term.<br />
-              Part-time: $850 per 5-week term.
+              INTERLINK tuition and fees are $1,700 per term for full-time study and $850 per term for part-time study.
             </p>
           </div>
         )}
@@ -1227,8 +1229,9 @@ function GreensboroPage() {
         {openFAQ === 5 && (
           <div className="px-4 pb-4">
             <p className="text-gray-700">
-              You get 20% off if you apply by the above mentioned date.<br />
-              Save up to $340 (full-time) or $170 (part-time).
+              Join our next term to get 20% off your tuition! Students already in the North Carolina area are eligible. Just submit your application and let your admissions advisor know you saw the 20% offer.<br />
+              <br />
+              Save up to $340 (full-time) or $170 (part-time) if you enroll next term!
             </p>
           </div>
         )}
@@ -1246,7 +1249,7 @@ function GreensboroPage() {
         {openFAQ === 6 && (
           <div className="px-4 pb-4">
             <p className="text-gray-700">
-              Apply anyway. We will help you start as soon as possible. You can also email us at admissions@interlink.edu
+              Submit your application anyway! You might be eligible for a different discount. We'll help you find the best offer on your studies.
             </p>
           </div>
         )}
@@ -1258,14 +1261,13 @@ function GreensboroPage() {
           onClick={() => toggleFAQ(7)}
           className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-100 transition-colors"
         >
-          <span className="text-base font-semibold text-gray-900">Do I need to be advanced?</span>
+          <span className="text-base font-semibold text-gray-900">What is the program duration?</span>
           <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 7 ? 'rotate-180' : ''}`} />
         </button>
         {openFAQ === 7 && (
           <div className="px-4 pb-4">
             <p className="text-gray-700">
-              No. You take a placement test and we put you in the right level.<br />
-              If you know some English, you are okay. We don't work with absolute begginers that don't speak ANY English at all.
+              Each level of INTERLINK's 6-level curriculum has two 5-week modules and lasts 10 weeks. Total time in the program depends on a student's prior knowledge of English and their English goals. A student's stay at INTERLINK may range from two to fifteen months.
             </p>
           </div>
         )}
@@ -1277,13 +1279,13 @@ function GreensboroPage() {
           onClick={() => toggleFAQ(8)}
           className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-100 transition-colors"
         >
-          <span className="text-base font-semibold text-gray-900">How long does it take?</span>
+          <span className="text-base font-semibold text-gray-900">Is there homework?</span>
           <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 8 ? 'rotate-180' : ''}`} />
         </button>
         {openFAQ === 8 && (
           <div className="px-4 pb-4">
             <p className="text-gray-700">
-              1 term is 5 weeks. The entire program has 6 levels. Most students finish the entire program in about 4–12 months. It depends on your level and effort.
+              Yes. This is a serious program. You will have classwork and homework.
             </p>
           </div>
         )}
@@ -1295,46 +1297,10 @@ function GreensboroPage() {
           onClick={() => toggleFAQ(9)}
           className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-100 transition-colors"
         >
-          <span className="text-base font-semibold text-gray-900">How big are classes?</span>
+          <span className="text-base font-semibold text-gray-900">What happens after I apply?</span>
           <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 9 ? 'rotate-180' : ''}`} />
         </button>
         {openFAQ === 9 && (
-          <div className="px-4 pb-4">
-            <p className="text-gray-700">
-              Classes are small so you get more speaking time. (Usually about 12–15 students.)
-            </p>
-          </div>
-        )}
-      </div>
-
-      {/* FAQ 10 */}
-      <div className="bg-gray-50 rounded-xl overflow-hidden border border-gray-200">
-        <button
-          onClick={() => toggleFAQ(10)}
-          className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-100 transition-colors"
-        >
-          <span className="text-base font-semibold text-gray-900">Is there homework?</span>
-          <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 10 ? 'rotate-180' : ''}`} />
-        </button>
-        {openFAQ === 10 && (
-          <div className="px-4 pb-4">
-            <p className="text-gray-700">
-              Yes. This is a serious program. You will have classwork and homework.
-            </p>
-          </div>
-        )}
-      </div>
-
-      {/* FAQ 11 */}
-      <div className="bg-gray-50 rounded-xl overflow-hidden border border-gray-200">
-        <button
-          onClick={() => toggleFAQ(11)}
-          className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-100 transition-colors"
-        >
-          <span className="text-base font-semibold text-gray-900">What happens after I apply?</span>
-          <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 11 ? 'rotate-180' : ''}`} />
-        </button>
-        {openFAQ === 11 && (
           <div className="px-4 pb-4">
             <p className="text-gray-700">
               We review your application. An advisor helps you with next steps and your placement test.
@@ -1343,23 +1309,6 @@ function GreensboroPage() {
         )}
       </div>
 
-      {/* FAQ 12 */}
-      <div className="bg-gray-50 rounded-xl overflow-hidden border border-gray-200">
-        <button
-          onClick={() => toggleFAQ(12)}
-          className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-100 transition-colors"
-        >
-          <span className="text-base font-semibold text-gray-900">Is this program for everyone?</span>
-          <ChevronDown className={`w-5 h-5 text-gray-600 transition-transform ${openFAQ === 12 ? 'rotate-180' : ''}`} />
-        </button>
-        {openFAQ === 12 && (
-          <div className="px-4 pb-4">
-            <p className="text-gray-700">
-              No. It is for serious students who will show up and speak in class.
-            </p>
-          </div>
-        )}
-      </div>
     </div>
 
     <div className="text-center">
