@@ -364,47 +364,74 @@ function GreensboroPage() {
               The cycle that builds real confidence
             </h3>
 
-            {/* Cycle diagram */}
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mb-8">
-              {/* DO Circle */}
-              <div className="flex flex-col items-center">
-                <div className="w-20 h-20 md:w-24 md:h-24 bg-amber-400 rounded-full flex items-center justify-center mb-3 shadow-lg">
-                  <div className="text-center">
-                    <div className="text-2xl md:text-3xl">🎯</div>
+            {/* Circular Cycle Diagram */}
+            <div className="flex justify-center mb-8">
+              <div className="relative w-full max-w-md md:max-w-lg aspect-square flex items-center justify-center">
+                {/* Outer connectors - styled as curved paths */}
+                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet">
+                  {/* Top curved connector (DO to REFLECT) */}
+                  <path d="M 200 80 Q 280 100 300 180" stroke="#1a7a7a" strokeWidth="24" fill="none" strokeLinecap="round" />
+
+                  {/* Right curved connector (REFLECT to TRY AGAIN) */}
+                  <path d="M 320 200 Q 340 280 260 320" stroke="#2dd4bf" strokeWidth="24" fill="none" strokeLinecap="round" />
+
+                  {/* Left curved connector (TRY AGAIN to DO) */}
+                  <path d="M 140 320 Q 60 280 80 200" stroke="#0f172a" strokeWidth="24" fill="none" strokeLinecap="round" />
+
+                  {/* Dotted arc for "repeat" indicator at top */}
+                  <path d="M 240 50 Q 280 40 310 60" stroke="#dc5d33" strokeWidth="3" fill="none" strokeDasharray="8,6" strokeLinecap="round" />
+
+                  {/* Dotted arc for "repeat" indicator at right */}
+                  <path d="M 350 280 Q 370 320 350 350" stroke="#dc5d33" strokeWidth="3" fill="none" strokeDasharray="8,6" strokeLinecap="round" />
+
+                  {/* Dotted arc for "repeat" indicator at left */}
+                  <path d="M 30 350 Q 10 320 30 280" stroke="#dc5d33" strokeWidth="3" fill="none" strokeDasharray="8,6" strokeLinecap="round" />
+                </svg>
+
+                {/* DO Circle - Top */}
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 flex flex-col items-center z-10">
+                  <div className="relative">
+                    {/* Outer ring for DO */}
+                    <div className="w-28 h-28 md:w-32 md:h-32 bg-gradient-to-br from-teal-600 to-teal-700 rounded-full shadow-xl flex items-center justify-center">
+                      {/* Inner white circle */}
+                      <div className="w-20 h-20 md:w-24 md:h-24 bg-white rounded-full flex flex-col items-center justify-center">
+                        <div className="text-2xl md:text-3xl mb-1">💬</div>
+                        <p className="font-bold text-teal-700 text-sm md:text-base">DO</p>
+                        <p className="text-xs text-gray-600 text-center">Practice in real situations</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <p className="font-bold text-white text-center text-sm md:text-base">DO</p>
-                <p className="text-xs md:text-sm text-gray-400 text-center mt-2 max-w-[120px]">Practice in real situations</p>
-              </div>
 
-              {/* Arrow */}
-              <div className="hidden md:block text-gray-400 text-2xl">→</div>
-              <div className="md:hidden text-gray-400 text-2xl">↓</div>
-
-              {/* REFLECT Circle */}
-              <div className="flex flex-col items-center">
-                <div className="w-20 h-20 md:w-24 md:h-24 bg-blue-500 rounded-full flex items-center justify-center mb-3 shadow-lg">
-                  <div className="text-center">
-                    <div className="text-2xl md:text-3xl">💭</div>
+                {/* REFLECT Circle - Bottom Right */}
+                <div className="absolute bottom-4 right-0 md:bottom-8 md:right-4 flex flex-col items-center z-10">
+                  <div className="relative">
+                    {/* Outer ring for REFLECT */}
+                    <div className="w-28 h-28 md:w-32 md:h-32 bg-gradient-to-br from-teal-400 to-teal-500 rounded-full shadow-xl flex items-center justify-center">
+                      {/* Inner white circle */}
+                      <div className="w-20 h-20 md:w-24 md:h-24 bg-white rounded-full flex flex-col items-center justify-center">
+                        <div className="text-2xl md:text-3xl mb-1">💭</div>
+                        <p className="font-bold text-teal-500 text-sm md:text-base">REFLECT</p>
+                        <p className="text-xs text-gray-600 text-center">What worked?</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <p className="font-bold text-white text-center text-sm md:text-base">REFLECT</p>
-                <p className="text-xs md:text-sm text-gray-400 text-center mt-2 max-w-[120px]">What worked? What didn't?</p>
-              </div>
 
-              {/* Arrow */}
-              <div className="hidden md:block text-gray-400 text-2xl">→</div>
-              <div className="md:hidden text-gray-400 text-2xl">↓</div>
-
-              {/* TRY AGAIN Circle */}
-              <div className="flex flex-col items-center">
-                <div className="w-20 h-20 md:w-24 md:h-24 bg-teal-500 rounded-full flex items-center justify-center mb-3 shadow-lg">
-                  <div className="text-center">
-                    <div className="text-2xl md:text-3xl">🚀</div>
+                {/* TRY AGAIN Circle - Bottom Left */}
+                <div className="absolute bottom-4 left-0 md:bottom-8 md:left-4 flex flex-col items-center z-10">
+                  <div className="relative">
+                    {/* Outer ring for TRY AGAIN */}
+                    <div className="w-28 h-28 md:w-32 md:h-32 bg-gradient-to-br from-blue-900 to-blue-950 rounded-full shadow-xl flex items-center justify-center">
+                      {/* Inner white circle */}
+                      <div className="w-20 h-20 md:w-24 md:h-24 bg-white rounded-full flex flex-col items-center justify-center">
+                        <div className="text-2xl md:text-3xl mb-1">🎯</div>
+                        <p className="font-bold text-blue-900 text-sm md:text-base">TRY AGAIN</p>
+                        <p className="text-xs text-gray-600 text-center">Apply what you learned</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <p className="font-bold text-white text-center text-sm md:text-base">TRY AGAIN</p>
-                <p className="text-xs md:text-sm text-gray-400 text-center mt-2 max-w-[120px]">Apply what you learned</p>
               </div>
             </div>
 
