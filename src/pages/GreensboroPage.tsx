@@ -345,7 +345,7 @@ function GreensboroPage() {
       </section>
 
       {/* Section 4.6: THE INTERLINK METHOD */}
-      <section className="bg-gray-50 py-12 md:py-16">
+      <section className="bg-gray-50 pt-0 pb-12 md:pt-0 md:pb-16">
         <div className="max-w-6xl mx-auto px-4">
           {/* Header */}
           <div className="text-center mb-8 md:mb-12">
@@ -361,7 +361,7 @@ function GreensboroPage() {
           </div>
 
           {/* Visual Cycle */}
-          <section className="bg-gray-50 pt-0 pb-12 md:pt-0 md:pb-16">
+          <div className="flex items-center justify-center my-0 md:my-0">
             <img
               src="https://i.imgur.com/PNYhMLa.png"
               alt="The DO, REFLECT, TRY AGAIN cycle that builds real confidence"
