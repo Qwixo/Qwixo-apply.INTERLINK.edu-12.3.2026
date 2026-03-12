@@ -739,7 +739,7 @@ function GreensboroPage() {
               <p><span className="font-semibold">Application Fee:</span> $100 for in-person / $50 for online</p>
               <p className="text-xs pt-2 border-t border-blue-200 mt-2">
                 <span className="font-semibold">Spring I discount:</span> Save $340 on full-time ($1,360) or $170 on part-time ($680). Apply by March 18.
-                <p<span className="font-semibold">Spring I discount:</span> save money</p>
+                <span className="font-semibold">Spring I discount:</span> ongoing savings
 
               </p>
             </div>
