@@ -500,20 +500,17 @@ function GreensboroPage() {
           <div className="bg-white rounded-2xl shadow-sm p-6 md:p-8">
             <div className="text-center mb-5">
               <p className="text-xs font-semibold text-[#064088] tracking-wide uppercase mb-2">
-                INTENSIVE PRACTICE
+                INTENSIVE PROGRAM
               </p>
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
-                5 days a week. Real speaking practice.
+                5 days/week. Expert teachers. Personalized feedback.
               </h2>
               <div className="max-w-2xl mx-auto space-y-1">
                 <p className="text-base text-gray-700">
-                  You do not learn fast with one class a week.
-                </p>
-                <p className="text-base text-gray-700">
-                  Here, you practice speaking every day.
+                  One class per week won't help you progress quickly. At INTERLINK, our daily classes provide regular practice to help solidify your skills
                 </p>
                 <p className="text-xs text-gray-600 mt-2 font-medium">
-                  Class times (Eastern Time)
+                  Times are Eastern Time
                 </p>
               </div>
             </div>
@@ -521,14 +518,11 @@ function GreensboroPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto mb-4">
               {/* Part-time Card */}
               <div className="border-2 border-gray-200 rounded-xl p-4 hover:border-[#064088] transition-colors">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">
                   Part-time
                 </h3>
-                <p className="text-gray-700 font-medium mb-2 text-sm">
-                  2 hours a day • Monday–Friday
-                </p>
-                <p className="text-xs text-gray-600 mb-1 font-medium">
-                  Choose ONE block:
+                <p className="text-xs text-gray-600 mb-2 font-medium">
+                  Choose ONE class:
                 </p>
                 <div className="space-y-1 text-xs text-gray-700">
                   <p>• 9:30–11:30 AM (Reading & Writing)</p>
@@ -538,14 +532,11 @@ function GreensboroPage() {
 
               {/* Full-time Card */}
               <div className="border-2 border-gray-200 rounded-xl p-4 hover:border-[#064088] transition-colors">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">
                   Full-time
                 </h3>
-                <p className="text-gray-700 font-medium mb-2 text-sm">
-                  4 hours a day • Monday–Friday
-                </p>
-                <p className="text-xs text-gray-600 mb-1 font-medium">
-                  Both blocks every day:
+                <p className="text-xs text-gray-600 mb-2 font-medium">
+                  Both classes every day:
                 </p>
                 <div className="space-y-1 text-xs text-gray-700">
                   <p>• 9:30–11:30 AM (Reading & Writing)</p>
@@ -554,20 +545,12 @@ function GreensboroPage() {
               </div>
             </div>
 
-            <p className="text-center text-gray-500 text-xs mb-4">
-              Times are Eastern Time.
-            </p>
-
-            <p className="text-center text-gray-600 text-sm mb-5">
-              Choose the pace that fits your life. You still practice a lot.
-            </p>
-
-            <div className="text-center">
+            <div className="text-center mt-6">
               <button
                 onClick={scrollToApply}
                 className="bg-[#dc5d33] text-white font-bold text-base px-6 py-3 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
               >
-                I want fast progress
+                I'm ready to improve my English
               </button>
             </div>
           </div>
