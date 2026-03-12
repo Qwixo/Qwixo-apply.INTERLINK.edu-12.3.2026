@@ -308,21 +308,21 @@ function GreensboroPage() {
                     <div className="w-10 h-10 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
                       <Check className="w-5 h-5 text-white" strokeWidth={3} />
                     </div>
-                    <p className="text-lg font-semibold text-gray-900">Live teacher</p>
+                    <p className="text-lg font-semibold text-gray-900">Express your ideas clearly</p>
                   </div>
 
                   <div className="flex items-center gap-3 mb-3">
                     <div className="w-10 h-10 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
                       <Check className="w-5 h-5 text-white" strokeWidth={3} />
                     </div>
-                    <p className="text-lg font-semibold text-gray-900">Small groups</p>
+                    <p className="text-lg font-semibold text-gray-900">Ask and answer questions without freezing up.</p>
                   </div>
 
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
                       <Check className="w-5 h-5 text-white" strokeWidth={3} />
                     </div>
-                    <p className="text-lg font-semibold text-gray-900">Daily speaking</p>
+                    <p className="text-lg font-semibold text-gray-900">Follow a fast conversation and stay in it.</p>
                   </div>
                 </div>
 
