@@ -412,7 +412,7 @@ function GreensboroPage() {
           {/* Highlighted Supporting Statement */}
           <div className="bg-blue-50 border-l-4 border-amber-400 rounded-lg p-6 md:p-8">
             <p className="text-gray-900 text-base md:text-lg font-medium leading-relaxed">
-              Students come to us to improve their reading, writing, speaking, and listening. They leave with much more — the confidence, strategies, and real-world skills to keep getting better long after the program ends.
+              Students come to us to improve their reading, writing, speaking, and listening. They leave with much more. The confidence, strategies, and real-world skills to keep getting better long after the program ends.
             </p>
           </div>
         </div>
