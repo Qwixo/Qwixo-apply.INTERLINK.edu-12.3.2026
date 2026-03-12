@@ -732,7 +732,7 @@ function GreensboroPage() {
 
           {/* Pricing Note Box */}
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 md:p-5 mb-5">
-            <h3 className="font-bold text-gray-900 mb-2 text-sm">Pricing</h3>
+            <h3 className="font-bold text-gray-900 mb-2 text-sm">Tuition and fees</h3>
             <div className="space-y-1 text-gray-700 text-sm">
               <p><span className="font-semibold">Full-time:</span> $1,700 / term (4 hours/day, Monday–Friday)</p>
               <p><span className="font-semibold">Part-time:</span> $850 / term (2 hours/day, Monday–Friday)</p>
