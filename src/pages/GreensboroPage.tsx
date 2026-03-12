@@ -276,7 +276,7 @@ function GreensboroPage() {
               {/* Left Column: Content */}
               <div>
                 <div className="text-xs md:text-sm uppercase tracking-widest text-[#dc5d33] font-bold mb-3">
-                  THE REAL SECRET
+                  THE TRUTH
                 </div>
 
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
