@@ -359,63 +359,12 @@ function GreensboroPage() {
           </div>
 
           {/* Visual Cycle */}
-          <div className="bg-[#1a2b4a] rounded-3xl p-8 md:p-12 mb-8 md:mb-12">
-            <h3 className="text-center text-lg md:text-xl text-gray-300 mb-10 font-semibold">
-              The cycle that builds real confidence
-            </h3>
-
-            {/* Cycle diagram */}
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mb-8">
-              {/* DO Circle */}
-              <div className="flex flex-col items-center">
-                <div className="w-20 h-20 md:w-24 md:h-24 bg-amber-400 rounded-full flex items-center justify-center mb-3 shadow-lg">
-                  <div className="text-center">
-                    <div className="text-2xl md:text-3xl">🎯</div>
-                  </div>
-                </div>
-                <p className="font-bold text-white text-center text-sm md:text-base">DO</p>
-                <p className="text-xs md:text-sm text-gray-400 text-center mt-2 max-w-[120px]">Practice in real situations</p>
-              </div>
-
-              {/* Arrow */}
-              <div className="hidden md:block text-gray-400 text-2xl">→</div>
-              <div className="md:hidden text-gray-400 text-2xl">↓</div>
-
-              {/* REFLECT Circle */}
-              <div className="flex flex-col items-center">
-                <div className="w-20 h-20 md:w-24 md:h-24 bg-blue-500 rounded-full flex items-center justify-center mb-3 shadow-lg">
-                  <div className="text-center">
-                    <div className="text-2xl md:text-3xl">💭</div>
-                  </div>
-                </div>
-                <p className="font-bold text-white text-center text-sm md:text-base">REFLECT</p>
-                <p className="text-xs md:text-sm text-gray-400 text-center mt-2 max-w-[120px]">What worked? What didn't?</p>
-              </div>
-
-              {/* Arrow */}
-              <div className="hidden md:block text-gray-400 text-2xl">→</div>
-              <div className="md:hidden text-gray-400 text-2xl">↓</div>
-
-              {/* TRY AGAIN Circle */}
-              <div className="flex flex-col items-center">
-                <div className="w-20 h-20 md:w-24 md:h-24 bg-teal-500 rounded-full flex items-center justify-center mb-3 shadow-lg">
-                  <div className="text-center">
-                    <div className="text-2xl md:text-3xl">🚀</div>
-                  </div>
-                </div>
-                <p className="font-bold text-white text-center text-sm md:text-base">TRY AGAIN</p>
-                <p className="text-xs md:text-sm text-gray-400 text-center mt-2 max-w-[120px]">Apply what you learned</p>
-              </div>
-            </div>
-
-            {/* Repeat line */}
-            <div className="text-center">
-              <div className="inline-block border-t border-amber-400 pt-4 px-6">
-                <p className="text-amber-400 text-xs md:text-sm font-bold tracking-wider uppercase">
-                  REPEAT EVERY DAY
-                </p>
-              </div>
-            </div>
+          <div className="bg-[#1a2b4a] rounded-3xl p-8 md:p-12 mb-8 md:mb-12 flex items-center justify-center">
+            <img
+              src="https://i.imgur.com/jLcVMHZ.png"
+              alt="The DO, REFLECT, TRY AGAIN cycle that builds real confidence"
+              className="w-full max-w-3xl h-auto"
+            />
           </div>
 
           {/* Three Feature Cards */}
