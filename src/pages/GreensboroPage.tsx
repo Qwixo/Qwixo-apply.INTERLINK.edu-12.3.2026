@@ -834,7 +834,7 @@ function GreensboroPage() {
 
           <div className="text-center mb-5">
             <p className="text-gray-900 font-bold text-lg md:text-xl">
-              Then, you’re ready to start your classes! (make this larger… equal weight to the listed steps but with more of a “done!” vibe)
+              Then, you’re ready to start your classes!
             </p>
           </div>
 
