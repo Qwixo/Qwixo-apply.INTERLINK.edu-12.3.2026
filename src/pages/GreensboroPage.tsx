@@ -401,10 +401,10 @@ function GreensboroPage() {
                 <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
                   <Users className="w-6 h-6 text-[#064088]" />
                 </div>
-                <h3 className="text-lg font-bold text-gray-900">Skills that grow with you</h3>
+                <h3 className="text-lg font-bold text-gray-900">Real practice every class</h3>
               </div>
               <p className="text-gray-700 text-sm">
-                Critical thinking, problem-solving, collaboration: the skills U.S. employers and universities expect.
+                You speak, listen, read, and write in situations that feel like real life, not a test.
               </p>
             </div>
           </div>
