@@ -335,16 +335,7 @@ function GreensboroPage() {
                 </div>
 
                 {/* Outcomes */}
-                    <div className="flex items-start gap-2">
-                    </div>
-                    <div className="flex items-start gap-2">
-                    </div>
-                    <div className="flex items-start gap-2">
-                    </div>
-                    <div className="flex items-start gap-2">
-                    </div>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>
