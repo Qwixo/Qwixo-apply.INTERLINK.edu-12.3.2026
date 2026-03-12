@@ -218,29 +218,34 @@ function GreensboroPage() {
               {/* Left Column */}
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                  English feels hard in real life.
+                  Using English in real life can be hard
                 </h2>
 
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <MessageSquare className="w-5 h-5 text-[#dc5d33] flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-700">You know what you want to say, but words don't come.</p>
-                  </div>
+                <div className="space-y-3 mb-5">
+                  <p className="text-gray-700">
+                    You've studied and practiced, but in the moment, the words don't come.
+                  </p>
+                  <p className="text-gray-700">
+                    People speak quickly and you miss things.
+                  </p>
+                  <p className="text-gray-700">
+                    You stay quiet, not because you don't have ideas, but because you're not sure how to say them in a way that lands.
+                  </p>
+                </div>
 
-                  <div className="flex items-start gap-3">
-                    <Users className="w-5 h-5 text-[#dc5d33] flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-700">At work or school, you feel quiet.</p>
+                <div className="text-sm text-gray-700">
+                  <p className="font-semibold mb-3">
+                    Many students have felt the same discomfort while learning English:
+                  </p>
+                  <div className="space-y-2">
+                    <p>• The hesitation before you speak</p>
+                    <p>• The frustration when someone doesn't understand you</p>
+                    <p>• The embarrassment when you say something and it doesn't come out right</p>
+                    <p>• The stress of always second-guessing yourself</p>
                   </div>
-
-                  <div className="flex items-start gap-3">
-                    <HelpCircle className="w-5 h-5 text-[#dc5d33] flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-700">People speak fast. You miss important details.</p>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <Lightbulb className="w-5 h-5 text-[#dc5d33] flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-700">You feel stressed and not taken seriously.</p>
-                  </div>
+                  <p className="font-semibold mt-3">
+                    You've probably wondered: What am I doing wrong?
+                  </p>
                 </div>
               </div>
 
@@ -249,10 +254,10 @@ function GreensboroPage() {
                 <div className="bg-blue-50 border border-blue-100 rounded-xl p-4 mb-4">
                   <h3 className="text-base font-bold text-gray-900 mb-2">The truth</h3>
                   <p className="text-sm text-gray-700">
-                    It's not because you are not smart.
+                    It isn't because you're not smart.
                   </p>
-                  <p className="text-sm font-semibold text-gray-900 mt-1">
-                    You just need practice.
+                  <p className="text-sm text-gray-700 mt-2">
+                    Your English is good enough to get by, but not yet where you need it to be.
                   </p>
                 </div>
 
@@ -260,7 +265,7 @@ function GreensboroPage() {
                   onClick={scrollToApply}
                   className="bg-[#dc5d33] text-white font-bold text-base px-6 py-3 rounded-lg shadow-md hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-lg"
                 >
-                  Get more practice
+                  I'm ready for real English
                 </button>
               </div>
             </div>
@@ -283,15 +288,12 @@ function GreensboroPage() {
                   More practice. Every day.
                 </h2>
 
-                <div className="space-y-2 mb-5">
+                <div className="space-y-3 mb-5">
                   <p className="text-base text-gray-700">
-                    Apps and YouTube can teach rules.
-                  </p>
-                  <p className="text-base text-gray-700">
-                    But they can't make you speak every day.
+                    The truth: Most English programs and free lessons teach grammar rules, not how to communicate confidently in the situations that actually matter to you: at your job, in your classes, in your daily life in the U.S.
                   </p>
                   <p className="text-base text-gray-700 font-semibold">
-                    INTERLINK does. You practice in every class.
+                    What you actually need are skills you can start using tomorrow.
                   </p>
                 </div>
 
@@ -299,31 +301,57 @@ function GreensboroPage() {
                   onClick={scrollToApply}
                   className="bg-[#dc5d33] text-white font-bold text-base px-6 py-3 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
                 >
-                  Give me real practice
+                  I'm done studying – I want to use English
                 </button>
               </div>
 
-              {/* Right Column: Mini Bullets */}
+              {/* Right Column: Features & Outcomes */}
               <div className="flex flex-col gap-4">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
-                    <Check className="w-5 h-5 text-white" strokeWidth={3} />
+                {/* Features */}
+                <div className="mb-4">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
+                      <Check className="w-5 h-5 text-white" strokeWidth={3} />
+                    </div>
+                    <p className="text-lg font-semibold text-gray-900">Live teacher</p>
                   </div>
-                  <p className="text-lg font-semibold text-gray-900">Live teacher</p>
+
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
+                      <Check className="w-5 h-5 text-white" strokeWidth={3} />
+                    </div>
+                    <p className="text-lg font-semibold text-gray-900">Small groups</p>
+                  </div>
+
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
+                      <Check className="w-5 h-5 text-white" strokeWidth={3} />
+                    </div>
+                    <p className="text-lg font-semibold text-gray-900">Daily speaking</p>
+                  </div>
                 </div>
 
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
-                    <Check className="w-5 h-5 text-white" strokeWidth={3} />
+                {/* Outcomes */}
+                <div className="border-t border-gray-200 pt-4">
+                  <p className="text-sm font-semibold text-gray-600 mb-3">What you'll be able to do:</p>
+                  <div className="space-y-2">
+                    <div className="flex items-start gap-2">
+                      <span className="text-[#dc5d33] font-bold flex-shrink-0">•</span>
+                      <p className="text-sm text-gray-700">Express your ideas clearly</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-[#dc5d33] font-bold flex-shrink-0">•</span>
+                      <p className="text-sm text-gray-700">Ask and answer questions without freezing up.</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-[#dc5d33] font-bold flex-shrink-0">•</span>
+                      <p className="text-sm text-gray-700">Follow a fast conversation and stay in it.</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-[#dc5d33] font-bold flex-shrink-0">•</span>
+                      <p className="text-sm text-gray-700">Know what went wrong and how to do better next time – and the confidence to keep trying.</p>
+                    </div>
                   </div>
-                  <p className="text-lg font-semibold text-gray-900">Small groups</p>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
-                    <Check className="w-5 h-5 text-white" strokeWidth={3} />
-                  </div>
-                  <p className="text-lg font-semibold text-gray-900">Daily speaking</p>
                 </div>
               </div>
             </div>
