@@ -203,7 +203,7 @@ function GreensboroPage() {
       <div className="flex flex-col items-center justify-center gap-2 min-h-[80px] md:min-h-[90px]">
         <MapPin className="w-8 h-8 text-[#064088]" />
         <p className="text-sm md:text-base font-semibold text-gray-900 leading-tight">
-          At UNCG & online
+          On-campus at UNCG & online
         </p>
       </div>
     </div>
