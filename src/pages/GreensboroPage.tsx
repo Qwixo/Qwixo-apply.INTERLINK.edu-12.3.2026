@@ -326,6 +326,15 @@ function GreensboroPage() {
                   </div>
                 </div>
 
+                
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
+                      <Check className="w-5 h-5 text-white" strokeWidth={3} />
+                    </div>
+                    <p className="text-lg font-semibold text-gray-900">Know what went wrong and how to do better next time – and the confidence to keep trying.</p>
+                  </div>
+                </div>
+
                 {/* Outcomes */}
                 <div className="border-t border-gray-200 pt-4">
                   <p className="text-sm font-semibold text-gray-600 mb-3">What you'll be able to do:</p>
