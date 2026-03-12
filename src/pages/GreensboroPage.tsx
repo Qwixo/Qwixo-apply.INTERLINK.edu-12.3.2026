@@ -740,7 +740,7 @@ function GreensboroPage() {
     <p className="text-xs pt-2 border-t border-blue-200 mt-2">
       <span className="font-semibold">Spring I discount:</span> Save $340 on full-time ($1,360) or $170 on part-time ($680). Apply by March 18.
       <br />
-      <span className="font-semibold">Continuing student savings:</span> Students who continue into the next term may be eligible for additional savings on tuition.
+      <span className="font-semibold">Continuing student savings:</span> Students who continue into the next term may be eligible for additional savings.
     </p>
   </div>
 </div>
