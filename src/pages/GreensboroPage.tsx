@@ -234,11 +234,9 @@ function GreensboroPage() {
                 </div>
 
                 <div className="text-sm text-gray-700">
-                  <p className="font-semibold mb-3">
-                    Many students have felt the same discomfort while learning English:
-                  </p>
+
                   <div className="space-y-2">
-           
+            
                   </div>
                   <p className="font-semibold mt-3">
                     You've probably wondered: What am I doing wrong?
