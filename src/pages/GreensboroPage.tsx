@@ -233,16 +233,7 @@ function GreensboroPage() {
                   </p>
                 </div>
 
-                <div className="text-sm text-gray-700">
-                  <p className="font-semibold mb-3">
-                    Many students have felt the same discomfort while learning English:
-                  </p>
-                  <div className="space-y-2">
-                    <p>• The hesitation before you speak</p>
-                    <p>• The frustration when someone doesn't understand you</p>
-                    <p>• The embarrassment when you say something and it doesn't come out right</p>
-                    <p>• The stress of always second-guessing yourself</p>
-                  </div>
+            
                   <p className="font-semibold mt-3">
                     You've probably wondered: What am I doing wrong?
                   </p>
