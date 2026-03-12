@@ -238,7 +238,7 @@ function GreensboroPage() {
                   <div className="space-y-2">
             
                   </div>
-                  <p className="font-semibold mt-5">
+                  <p className="font-semibold mt-4">
                     You've probably wondered: What am I doing wrong?
                   </p>
                 </div>
@@ -260,12 +260,7 @@ function GreensboroPage() {
                   onClick={scrollToApply}
                   className="bg-[#dc5d33] text-white font-bold text-base px-6 py-3 rounded-lg shadow-md hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-lg"
                 >
-                  I'm ready for real English
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+                  
       </section>
 
       {/* Section 4.5: The Real Secret - Daily Practice */}
@@ -308,39 +303,21 @@ function GreensboroPage() {
                     <div className="w-10 h-10 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
                       <Check className="w-5 h-5 text-white" strokeWidth={3} />
                     </div>
-                    <p className="text-lg font-semibold text-gray-900">Express your ideas clearly</p>
+                    <p className="text-lg font-semibold text-gray-900">Live teacher</p>
                   </div>
 
                   <div className="flex items-center gap-3 mb-3">
                     <div className="w-10 h-10 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
                       <Check className="w-5 h-5 text-white" strokeWidth={3} />
                     </div>
-                    <p className="text-lg font-semibold text-gray-900">Ask and answer questions without freezing up.</p>
+                    <p className="text-lg font-semibold text-gray-900">Small groups</p>
                   </div>
 
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
                       <Check className="w-5 h-5 text-white" strokeWidth={3} />
                     </div>
-                    <p className="text-lg font-semibold text-gray-900">Follow a fast conversation and stay in it.</p>
-                  </div>
-                </div>
-
-
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
-                      <Check className="w-5 h-5 text-white" strokeWidth={3} />
-                    </div>
-                    <p className="text-lg font-semibold text-gray-900">Know what went wrong and how to do better next time – and the confidence to keep trying.</p>
-                  </div>
-                </div>
-              
-                
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
-                      <Check className="w-5 h-5 text-white" strokeWidth={3} />
-                    </div>
-                    <p className="text-lg font-semibold text-gray-900">Know what went wrong and how to do better next time – and the confidence to keep trying.</p>
+                    <p className="text-lg font-semibold text-gray-900">Daily speaking</p>
                   </div>
                 </div>
 
