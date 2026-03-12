@@ -338,16 +338,12 @@ function GreensboroPage() {
                 <div className="border-t border-gray-200 pt-4">
                   <div className="space-y-2">
                     <div className="flex items-start gap-2">
-                      <span className="text-[#dc5d33] font-bold flex-shrink-0">•</span>
                     </div>
                     <div className="flex items-start gap-2">
-                      <span className="text-[#dc5d33] font-bold flex-shrink-0">•</span>
                     </div>
                     <div className="flex items-start gap-2">
-                      <span className="text-[#dc5d33] font-bold flex-shrink-0">•</span>
                     </div>
                     <div className="flex items-start gap-2">
-                      <span className="text-[#dc5d33] font-bold flex-shrink-0">•</span>
                     </div>
                   </div>
                 </div>
