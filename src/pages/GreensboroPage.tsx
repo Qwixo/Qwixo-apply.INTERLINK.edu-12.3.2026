@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import GreensboroHero from '../components/GreensboroHero';
+import { motion } from 'framer-motion';
 import Real_Testimonials from '../components/Real_Testimonials';
 import { Users, Globe, Calendar, MapPin, User, MessageSquare, Presentation, HelpCircle, BookOpen, Lightbulb, Check, ChevronDown, X, Film } from 'lucide-react';
 
@@ -20,6 +20,10 @@ function GreensboroPage() {
     if (applySection) {
       applySection.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const handleHeroCTAClick = () => {
+    scrollToApply();
   };
 
   const handleBannerClick = () => {
@@ -94,7 +98,82 @@ function GreensboroPage() {
           </div>
         </div>
       )}
-      <GreensboroHero />
+
+      {/* Hero Section */}
+      <section className="bg-white pt-3 md:pt-4 pb-1 md:pb-12">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center max-w-4xl mx-auto">
+            {/* Kicker */}
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-sm md:text-base uppercase tracking-wider text-[#064088] font-medium mb-3"
+            >
+              ON CAMPUS CLASSES AT UNC GREENSBORO • ONLINE CLASSES
+            </motion.div>
+
+            {/* Headline */}
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="text-4xl md:text-5xl font-bold text-gray-900 mb-4"
+            >
+              Speak English with confidence
+            </motion.h1>
+
+            {/* Subheadline */}
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-xl md:text-2xl text-gray-700 mb-6 max-w-3xl mx-auto"
+            >
+              Practice smarter and improve faster with live classes
+            </motion.p>
+
+            {/* Google Drive Video Embed */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.3 }}
+              className="mb-6"
+            >
+              <div className="relative w-full max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-lg" style={{ paddingBottom: '56.25%' }}>
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full"
+                  src="https://drive.google.com/file/d/1rA8y00AqAgvszZZ6zD6kPBwNodRVi7dK/preview"
+                  title="INTERLINK Video"
+                  frameBorder="0"
+                  allow="autoplay"
+                  allowFullScreen
+                />
+              </div>
+            </motion.div>
+
+            {/* CTA Button */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.4 }}
+              className="flex flex-col items-center gap-3"
+            >
+              <button
+                onClick={handleHeroCTAClick}
+                className="bg-[#dc5d33] text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
+              >
+                I'm done studying – I want to use English
+              </button>
+
+              {/* Selective tagline */}
+              <p className="text-sm md:text-base text-gray-600 font-medium">
+                Daily English classes with a live instructor. No textbooks or exams. Build real-world skills you'll actually use.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
 
 {/* Section 2: Credibility Strip */}
 <section className="bg-gray-50 py-0 md:py-0">
@@ -103,28 +182,28 @@ function GreensboroPage() {
       <div className="flex flex-col items-center justify-center gap-2 min-h-[80px] md:min-h-[90px]">
         <Calendar className="w-8 h-8 text-[#064088]" />
         <p className="text-sm md:text-base font-semibold text-gray-900 leading-tight">
-          Helping since 1979
+          45+ Years of Expertise
         </p>
       </div>
 
       <div className="flex flex-col items-center justify-center gap-2 min-h-[80px] md:min-h-[90px]">
         <Users className="w-8 h-8 text-[#064088]" />
         <p className="text-sm md:text-base font-semibold text-gray-900 leading-tight">
-          Thousands of students
+          10k+ Global Graduates
         </p>
       </div>
 
       <div className="flex flex-col items-center justify-center gap-2 min-h-[80px] md:min-h-[90px]">
         <Globe className="w-8 h-8 text-[#064088]" />
         <p className="text-sm md:text-base font-semibold text-gray-900 leading-tight">
-          70+ countries
+          80+ Countries Serves
         </p>
       </div>
 
       <div className="flex flex-col items-center justify-center gap-2 min-h-[80px] md:min-h-[90px]">
         <MapPin className="w-8 h-8 text-[#064088]" />
         <p className="text-sm md:text-base font-semibold text-gray-900 leading-tight">
-          On-campus at UNCG
+          On campus and online
         </p>
       </div>
     </div>
