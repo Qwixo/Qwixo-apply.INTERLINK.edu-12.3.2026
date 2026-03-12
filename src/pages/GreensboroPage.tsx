@@ -361,7 +361,7 @@ function GreensboroPage() {
           {/* Visual Cycle */}
           <div className="flex items-center justify-center my-2 md:my-4">
             <img
-              src="https://i.imgur.com/jLcVMHZ.png"
+              src="https://i.imgur.com/PNYhMLa.png"
               alt="The DO, REFLECT, TRY AGAIN cycle that builds real confidence"
               className="w-full max-w-3xl h-auto"
             />
