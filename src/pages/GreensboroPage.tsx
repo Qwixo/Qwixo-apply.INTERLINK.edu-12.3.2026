@@ -336,26 +336,7 @@ function GreensboroPage() {
                 </div>
 
                 {/* Outcomes */}
-                <div className="border-t border-gray-200 pt-4">
-                  <p className="text-sm font-semibold text-gray-600 mb-3">What you'll be able to do:</p>
-                  <div className="space-y-2">
-                    <div className="flex items-start gap-2">
-                      <span className="text-[#dc5d33] font-bold flex-shrink-0">•</span>
-                      <p className="text-sm text-gray-700">Express your ideas clearly</p>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <span className="text-[#dc5d33] font-bold flex-shrink-0">•</span>
-                      <p className="text-sm text-gray-700">Ask and answer questions without freezing up.</p>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <span className="text-[#dc5d33] font-bold flex-shrink-0">•</span>
-                      <p className="text-sm text-gray-700">Follow a fast conversation and stay in it.</p>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <span className="text-[#dc5d33] font-bold flex-shrink-0">•</span>
-                      <p className="text-sm text-gray-700">Know what went wrong and how to do better next time – and the confidence to keep trying.</p>
-                    </div>
-                  </div>
+
                 </div>
               </div>
             </div>
