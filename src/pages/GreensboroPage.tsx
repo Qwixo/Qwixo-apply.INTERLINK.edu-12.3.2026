@@ -344,32 +344,30 @@ function GreensboroPage() {
         </div>
       </section>
 
-{/* Section 4.6: THE INTERLINK METHOD */}
-<section className="bg-gray-50 pt-0 pb-12 md:pt-0 md:pb-16">
-  <div className="max-w-6xl mx-auto px-4">
-    {/* Header */}
-    <div className="text-center mb-8 md:mb-12">
-      <div className="text-xs md:text-sm uppercase tracking-widest text-[#dc5d33] font-bold mb-3">
-        THE INTERLINK METHOD
-      </div>
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-        You learn by doing, not by memorizing.
-      </h2>
-      <p className="text-base md:text-lg text-gray-700 max-w-3xl mx-auto">
-        Forget textbooks, worksheets, and grammar drills. In our classes, you practice real English – the kind you need at work, in school, and in everyday life. Then, you reflect, get feedback, and try again. That's how real progress happens.
-      </p>
-    </div>
+      {/* Section 4.6: THE INTERLINK METHOD */}
+      <section className="bg-gray-50 py-12 md:py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          {/* Header */}
+          <div className="text-center mb-0">
+            <div className="text-xs md:text-sm uppercase tracking-widest text-[#dc5d33] font-bold mb-3">
+              THE INTERLINK METHOD
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              You learn by doing, not by memorizing.
+            </h2>
+            <p className="text-base md:text-lg text-gray-700 max-w-3xl mx-auto">
+              Forget textbooks, worksheets, and grammar drills. In our classes, you practice real English – the kind you need at work, in school, and in everyday life. Then, you reflect, get feedback, and try again. That's how real progress happens.
+            </p>
+          </div>
 
-    {/* Visual Cycle */}
-    <div className="flex items-center justify-center my-0 md:my-0">
-      <img
-        src="https://i.imgur.com/PNYhMLa.png"
-        alt="The DO, REFLECT, TRY AGAIN cycle that builds real confidence"
-        className="w-full max-w-3xl h-auto"
-      />
-    </div>
-  </div>
-</section>
+          {/* Visual Cycle */}
+          <div className="flex items-center justify-center my-0 md:my-0">
+            <img
+              src="https://i.imgur.com/PNYhMLa.png"
+              alt="The DO, REFLECT, TRY AGAIN cycle that builds real confidence"
+              className="w-full max-w-3xl h-auto"
+            />
+          </div>
 
           {/* Three Feature Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
