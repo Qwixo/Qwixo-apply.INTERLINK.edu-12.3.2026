@@ -736,7 +736,7 @@ function GreensboroPage() {
             <div className="space-y-1 text-gray-700 text-sm">
               <p><span className="font-semibold">Full-time:</span> $1,700 / term (4 hours/day, Monday–Friday)</p>
               <p><span className="font-semibold">Part-time:</span> $850 / term (2 hours/day, Monday–Friday)</p>
-              <p><span className="font-semibold">Application Fee:</span> $100 for in-person, $50 online</p>
+              <p><span className="font-semibold">Application Fee:</span> $100 for in-person / $50 online</p>
               
               <p className="text-xs pt-2 border-t border-blue-200 mt-2">
                 <span className="font-semibold">Spring I discount:</span> Save $340 on full-time ($1,360) or $170 on part-time ($680). Apply by March 18.
