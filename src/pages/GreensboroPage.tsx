@@ -203,7 +203,7 @@ function GreensboroPage() {
       <div className="flex flex-col items-center justify-center gap-2 min-h-[80px] md:min-h-[90px]">
         <MapPin className="w-8 h-8 text-[#064088]" />
         <p className="text-sm md:text-base font-semibold text-gray-900 leading-tight">
-          On-campus at UNCG & online
+          On campus and online
         </p>
       </div>
     </div>
@@ -234,9 +234,14 @@ function GreensboroPage() {
                 </div>
 
                 <div className="text-sm text-gray-700">
-
+                  <p className="font-semibold mb-3">
+                    Many students have felt the same discomfort while learning English:
+                  </p>
                   <div className="space-y-2">
-
+                    <p>• The hesitation before you speak</p>
+                    <p>• The frustration when someone doesn't understand you</p>
+                    <p>• The embarrassment when you say something and it doesn't come out right</p>
+                    <p>• The stress of always second-guessing yourself</p>
                   </div>
                   <p className="font-semibold mt-4">
                     You've probably wondered: What am I doing wrong?
@@ -276,7 +281,7 @@ function GreensboroPage() {
               {/* Left Column: Content */}
               <div>
                 <div className="text-xs md:text-sm uppercase tracking-widest text-[#dc5d33] font-bold mb-3">
-                  THE TRUTH
+                  THE REAL SECRET
                 </div>
 
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
@@ -285,7 +290,7 @@ function GreensboroPage() {
 
                 <div className="space-y-3 mb-5">
                   <p className="text-base text-gray-700">
-                    Most English programs and free lessons teach grammar rules, not how to communicate confidently in the situations that actually matter to you: at your job, in your classes, in your daily life in the U.S.
+                    The truth: Most English programs and free lessons teach grammar rules, not how to communicate confidently in the situations that actually matter to you: at your job, in your classes, in your daily life in the U.S.
                   </p>
                   <p className="text-base text-gray-700 font-semibold">
                     What you actually need are skills you can start using tomorrow.
@@ -308,34 +313,46 @@ function GreensboroPage() {
                     <div className="w-10 h-10 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
                       <Check className="w-5 h-5 text-white" strokeWidth={3} />
                     </div>
-                    <p className="text-lg font-semibold text-gray-900">Express your ideas clearly</p>
+                    <p className="text-lg font-semibold text-gray-900">Live teacher</p>
                   </div>
 
                   <div className="flex items-center gap-3 mb-3">
                     <div className="w-10 h-10 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
                       <Check className="w-5 h-5 text-white" strokeWidth={3} />
                     </div>
-                    <p className="text-lg font-semibold text-gray-900">Ask and answer questions without freezing up</p>
+                    <p className="text-lg font-semibold text-gray-900">Small groups</p>
                   </div>
 
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
-                      <Check className="w-5 h-5 text-white" strokeWidth={3} />
-                    </div>
-                    <p className="text-lg font-semibold text-gray-900">Follow a fast conversation and stay in it.</p>
-                  </div>
-
-                  
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full bg-[#064088] flex items-center justify-center flex-shrink-0">
                       <Check className="w-5 h-5 text-white" strokeWidth={3} />
                     </div>
-                    <p className="text-lg font-semibold text-gray-900">Know what went wrong and how to do better next time and the confidence to keep trying.</p>
+                    <p className="text-lg font-semibold text-gray-900">Daily speaking</p>
                   </div>
                 </div>
 
                 {/* Outcomes */}
-                
+                <div className="border-t border-gray-200 pt-4">
+                  <p className="text-sm font-semibold text-gray-600 mb-3">What you'll be able to do:</p>
+                  <div className="space-y-2">
+                    <div className="flex items-start gap-2">
+                      <span className="text-[#dc5d33] font-bold flex-shrink-0">•</span>
+                      <p className="text-sm text-gray-700">Express your ideas clearly</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-[#dc5d33] font-bold flex-shrink-0">•</span>
+                      <p className="text-sm text-gray-700">Ask and answer questions without freezing up.</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-[#dc5d33] font-bold flex-shrink-0">•</span>
+                      <p className="text-sm text-gray-700">Follow a fast conversation and stay in it.</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-[#dc5d33] font-bold flex-shrink-0">•</span>
+                      <p className="text-sm text-gray-700">Know what went wrong and how to do better next time – and the confidence to keep trying.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -364,74 +381,47 @@ function GreensboroPage() {
               The cycle that builds real confidence
             </h3>
 
-            {/* Circular Cycle Diagram */}
-            <div className="flex justify-center mb-8">
-              <div className="relative w-full max-w-md md:max-w-lg aspect-square flex items-center justify-center">
-                {/* Outer connectors - styled as curved paths */}
-                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet">
-                  {/* Top curved connector (DO to REFLECT) */}
-                  <path d="M 200 80 Q 280 100 300 180" stroke="#1a7a7a" strokeWidth="24" fill="none" strokeLinecap="round" />
-
-                  {/* Right curved connector (REFLECT to TRY AGAIN) */}
-                  <path d="M 320 200 Q 340 280 260 320" stroke="#2dd4bf" strokeWidth="24" fill="none" strokeLinecap="round" />
-
-                  {/* Left curved connector (TRY AGAIN to DO) */}
-                  <path d="M 140 320 Q 60 280 80 200" stroke="#0f172a" strokeWidth="24" fill="none" strokeLinecap="round" />
-
-                  {/* Dotted arc for "repeat" indicator at top */}
-                  <path d="M 240 50 Q 280 40 310 60" stroke="#dc5d33" strokeWidth="3" fill="none" strokeDasharray="8,6" strokeLinecap="round" />
-
-                  {/* Dotted arc for "repeat" indicator at right */}
-                  <path d="M 350 280 Q 370 320 350 350" stroke="#dc5d33" strokeWidth="3" fill="none" strokeDasharray="8,6" strokeLinecap="round" />
-
-                  {/* Dotted arc for "repeat" indicator at left */}
-                  <path d="M 30 350 Q 10 320 30 280" stroke="#dc5d33" strokeWidth="3" fill="none" strokeDasharray="8,6" strokeLinecap="round" />
-                </svg>
-
-                {/* DO Circle - Top */}
-                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 flex flex-col items-center z-10">
-                  <div className="relative">
-                    {/* Outer ring for DO */}
-                    <div className="w-28 h-28 md:w-32 md:h-32 bg-gradient-to-br from-teal-600 to-teal-700 rounded-full shadow-xl flex items-center justify-center">
-                      {/* Inner white circle */}
-                      <div className="w-20 h-20 md:w-24 md:h-24 bg-white rounded-full flex flex-col items-center justify-center">
-                        <div className="text-2xl md:text-3xl mb-1">💬</div>
-                        <p className="font-bold text-teal-700 text-sm md:text-base">DO</p>
-                        <p className="text-xs text-gray-600 text-center">Practice in real situations</p>
-                      </div>
-                    </div>
+            {/* Cycle diagram */}
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mb-8">
+              {/* DO Circle */}
+              <div className="flex flex-col items-center">
+                <div className="w-20 h-20 md:w-24 md:h-24 bg-amber-400 rounded-full flex items-center justify-center mb-3 shadow-lg">
+                  <div className="text-center">
+                    <div className="text-2xl md:text-3xl">🎯</div>
                   </div>
                 </div>
+                <p className="font-bold text-white text-center text-sm md:text-base">DO</p>
+                <p className="text-xs md:text-sm text-gray-400 text-center mt-2 max-w-[120px]">Practice in real situations</p>
+              </div>
 
-                {/* REFLECT Circle - Bottom Right */}
-                <div className="absolute bottom-4 right-0 md:bottom-8 md:right-4 flex flex-col items-center z-10">
-                  <div className="relative">
-                    {/* Outer ring for REFLECT */}
-                    <div className="w-28 h-28 md:w-32 md:h-32 bg-gradient-to-br from-teal-400 to-teal-500 rounded-full shadow-xl flex items-center justify-center">
-                      {/* Inner white circle */}
-                      <div className="w-20 h-20 md:w-24 md:h-24 bg-white rounded-full flex flex-col items-center justify-center">
-                        <div className="text-2xl md:text-3xl mb-1">💭</div>
-                        <p className="font-bold text-teal-500 text-sm md:text-base">REFLECT</p>
-                        <p className="text-xs text-gray-600 text-center">What worked?</p>
-                      </div>
-                    </div>
+              {/* Arrow */}
+              <div className="hidden md:block text-gray-400 text-2xl">→</div>
+              <div className="md:hidden text-gray-400 text-2xl">↓</div>
+
+              {/* REFLECT Circle */}
+              <div className="flex flex-col items-center">
+                <div className="w-20 h-20 md:w-24 md:h-24 bg-blue-500 rounded-full flex items-center justify-center mb-3 shadow-lg">
+                  <div className="text-center">
+                    <div className="text-2xl md:text-3xl">💭</div>
                   </div>
                 </div>
+                <p className="font-bold text-white text-center text-sm md:text-base">REFLECT</p>
+                <p className="text-xs md:text-sm text-gray-400 text-center mt-2 max-w-[120px]">What worked? What didn't?</p>
+              </div>
 
-                {/* TRY AGAIN Circle - Bottom Left */}
-                <div className="absolute bottom-4 left-0 md:bottom-8 md:left-4 flex flex-col items-center z-10">
-                  <div className="relative">
-                    {/* Outer ring for TRY AGAIN */}
-                    <div className="w-28 h-28 md:w-32 md:h-32 bg-gradient-to-br from-blue-900 to-blue-950 rounded-full shadow-xl flex items-center justify-center">
-                      {/* Inner white circle */}
-                      <div className="w-20 h-20 md:w-24 md:h-24 bg-white rounded-full flex flex-col items-center justify-center">
-                        <div className="text-2xl md:text-3xl mb-1">🎯</div>
-                        <p className="font-bold text-blue-900 text-sm md:text-base">TRY AGAIN</p>
-                        <p className="text-xs text-gray-600 text-center">Apply what you learned</p>
-                      </div>
-                    </div>
+              {/* Arrow */}
+              <div className="hidden md:block text-gray-400 text-2xl">→</div>
+              <div className="md:hidden text-gray-400 text-2xl">↓</div>
+
+              {/* TRY AGAIN Circle */}
+              <div className="flex flex-col items-center">
+                <div className="w-20 h-20 md:w-24 md:h-24 bg-teal-500 rounded-full flex items-center justify-center mb-3 shadow-lg">
+                  <div className="text-center">
+                    <div className="text-2xl md:text-3xl">🚀</div>
                   </div>
                 </div>
+                <p className="font-bold text-white text-center text-sm md:text-base">TRY AGAIN</p>
+                <p className="text-xs md:text-sm text-gray-400 text-center mt-2 max-w-[120px]">Apply what you learned</p>
               </div>
             </div>
 
