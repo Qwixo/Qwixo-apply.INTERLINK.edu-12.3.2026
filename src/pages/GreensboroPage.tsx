@@ -751,7 +751,7 @@ function GreensboroPage() {
               Apply for Spring I
             </button>
             <a
-              href="https://interlink.edu/university-programs/"
+              href="https://interlink.edu/dates-fees/"
               target="_blank"
               rel="noreferrer"
               className="flex-1 bg-white text-[#064088] border-2 border-[#064088] font-bold text-base px-6 py-3 rounded-lg hover:bg-[#064088] hover:text-white transition-all duration-300 text-center"
