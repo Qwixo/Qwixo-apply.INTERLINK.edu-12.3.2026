@@ -359,105 +359,202 @@ function GreensboroPage() {
         </div>
       </section>
 
-      {/* Section 5: What You Will Do In Class */}
-      <section className="bg-white py-10 md:py-14">
+      {/* Section 4.6: THE INTERLINK METHOD */}
+      <section className="bg-gray-50 py-12 md:py-16">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-              What you will do in class
+          {/* Header */}
+          <div className="text-center mb-8 md:mb-12">
+            <div className="text-xs md:text-sm uppercase tracking-widest text-[#dc5d33] font-bold mb-3">
+              THE INTERLINK METHOD
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              You learn by doing, not by memorizing.
             </h2>
-            <p className="text-base md:text-lg text-gray-700">
-              These are real speaking tasks. Not just worksheets.
+            <p className="text-base md:text-lg text-gray-700 max-w-3xl mx-auto">
+              Forget textbooks, worksheets, and grammar drills. In our classes, you practice real English – the kind you need at work, in school, and in everyday life. Then, you reflect, get feedback, and try again. That's how real progress happens.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 max-w-6xl mx-auto mt-6 mb-6">
-            {/* Card 1 */}
-            <div className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
-              <div className="flex justify-center mb-2">
-                <Users className="w-8 h-8 text-[#064088]" />
+          {/* Visual Cycle */}
+          <div className="bg-[#1a2b4a] rounded-3xl p-8 md:p-12 mb-8 md:mb-12">
+            <h3 className="text-center text-lg md:text-xl text-gray-300 mb-10 font-semibold">
+              The cycle that builds real confidence
+            </h3>
+
+            {/* Cycle diagram */}
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mb-8">
+              {/* DO Circle */}
+              <div className="flex flex-col items-center">
+                <div className="w-20 h-20 md:w-24 md:h-24 bg-amber-400 rounded-full flex items-center justify-center mb-3 shadow-lg">
+                  <div className="text-center">
+                    <div className="text-2xl md:text-3xl">🎯</div>
+                  </div>
+                </div>
+                <p className="font-bold text-white text-center text-sm md:text-base">DO</p>
+                <p className="text-xs md:text-sm text-gray-400 text-center mt-2 max-w-[120px]">Practice in real situations</p>
               </div>
-              <h3 className="text-base font-bold text-gray-900 mb-1 text-center">
-                Talk in small groups
-              </h3>
-              <p className="text-gray-700 text-center text-xs">
-                You speak more, every class.
+
+              {/* Arrow */}
+              <div className="hidden md:block text-gray-400 text-2xl">→</div>
+              <div className="md:hidden text-gray-400 text-2xl">↓</div>
+
+              {/* REFLECT Circle */}
+              <div className="flex flex-col items-center">
+                <div className="w-20 h-20 md:w-24 md:h-24 bg-blue-500 rounded-full flex items-center justify-center mb-3 shadow-lg">
+                  <div className="text-center">
+                    <div className="text-2xl md:text-3xl">💭</div>
+                  </div>
+                </div>
+                <p className="font-bold text-white text-center text-sm md:text-base">REFLECT</p>
+                <p className="text-xs md:text-sm text-gray-400 text-center mt-2 max-w-[120px]">What worked? What didn't?</p>
+              </div>
+
+              {/* Arrow */}
+              <div className="hidden md:block text-gray-400 text-2xl">→</div>
+              <div className="md:hidden text-gray-400 text-2xl">↓</div>
+
+              {/* TRY AGAIN Circle */}
+              <div className="flex flex-col items-center">
+                <div className="w-20 h-20 md:w-24 md:h-24 bg-teal-500 rounded-full flex items-center justify-center mb-3 shadow-lg">
+                  <div className="text-center">
+                    <div className="text-2xl md:text-3xl">🚀</div>
+                  </div>
+                </div>
+                <p className="font-bold text-white text-center text-sm md:text-base">TRY AGAIN</p>
+                <p className="text-xs md:text-sm text-gray-400 text-center mt-2 max-w-[120px]">Apply what you learned</p>
+              </div>
+            </div>
+
+            {/* Repeat line */}
+            <div className="text-center">
+              <div className="inline-block border-t border-amber-400 pt-4 px-6">
+                <p className="text-amber-400 text-xs md:text-sm font-bold tracking-wider uppercase">
+                  REPEAT EVERY DAY
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Three Feature Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            {/* Card 1 */}
+            <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Lightbulb className="w-6 h-6 text-[#064088]" />
+                </div>
+                <h3 className="text-lg font-bold text-gray-900">Real practice every class</h3>
+              </div>
+              <p className="text-gray-700 text-sm">
+                You speak, listen, read, and write in situations that feel like real life, not a test.
               </p>
             </div>
 
             {/* Card 2 */}
-            <div className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
-              <div className="flex justify-center mb-2">
-                <Presentation className="w-8 h-8 text-[#064088]" />
+            <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <MessageSquare className="w-6 h-6 text-[#064088]" />
+                </div>
+                <h3 className="text-lg font-bold text-gray-900">Feedback made for you</h3>
               </div>
-              <h3 className="text-base font-bold text-gray-900 mb-1 text-center">
-                Presentations
-              </h3>
-              <p className="text-gray-700 text-center text-xs">
-                Speak in front of others, with support.
+              <p className="text-gray-700 text-sm">
+                Every student is different. Your instructor gives you personalized guidance to help you improve faster.
               </p>
             </div>
 
             {/* Card 3 */}
-            <div className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
-              <div className="flex justify-center mb-2">
-                <HelpCircle className="w-8 h-8 text-[#064088]" />
+            <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Users className="w-6 h-6 text-[#064088]" />
+                </div>
+                <h3 className="text-lg font-bold text-gray-900">Skills that grow with you</h3>
               </div>
-              <h3 className="text-base font-bold text-gray-900 mb-1 text-center">
-                Interviews
-              </h3>
-              <p className="text-gray-700 text-center text-xs">
-                Practice real questions and answers.
-              </p>
-            </div>
-
-            {/* Card 4 */}
-            <div className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
-              <div className="flex justify-center mb-2">
-                <Lightbulb className="w-8 h-8 text-[#064088]" />
-              </div>
-              <h3 className="text-base font-bold text-gray-900 mb-1 text-center">
-                Group problem solving
-              </h3>
-              <p className="text-gray-700 text-center text-xs">
-                Work together and speak under pressure.
-              </p>
-            </div>
-
-            {/* Card 5 */}
-            <div className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
-              <div className="flex justify-center mb-2">
-                <BookOpen className="w-8 h-8 text-[#064088]" />
-              </div>
-              <h3 className="text-base font-bold text-gray-900 mb-1 text-center">
-                Real reading and writing
-              </h3>
-              <p className="text-gray-700 text-center text-xs">
-                Short tasks connected to real topics.
-              </p>
-            </div>
-
-            {/* Card 6 */}
-            <div className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
-              <div className="flex justify-center mb-2">
-                <Film className="w-8 h-8 text-[#064088]" />
-              </div>
-              <h3 className="text-base font-bold text-gray-900 mb-1 text-center">
-                Video projects
-              </h3>
-              <p className="text-gray-700 text-center text-xs">
-                Create videos in groups and other fun activities.
+              <p className="text-gray-700 text-sm">
+                Critical thinking, problem-solving, collaboration: the skills U.S. employers and universities expect.
               </p>
             </div>
           </div>
 
+          {/* Highlighted Supporting Statement */}
+          <div className="bg-blue-50 border-l-4 border-amber-400 rounded-lg p-6 md:p-8">
+            <p className="text-gray-900 text-base md:text-lg font-medium leading-relaxed">
+              Students come to us to improve their reading, writing, speaking, and listening. They leave with much more — the confidence, strategies, and real-world skills to keep getting better long after the program ends.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 5: What You Will Do In Class - Simplified Sub-section */}
+      <section className="bg-white py-8 md:py-10">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-6">
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+              What you will do in class
+            </h3>
+            <p className="text-sm md:text-base text-gray-600">
+              Learn more about how
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto mb-6">
+            {/* Item 1 */}
+            <div className="bg-gray-50 rounded-lg p-4 text-center border border-gray-200">
+              <p className="text-sm md:text-base font-semibold text-gray-900">
+                Talk in small groups
+              </p>
+            </div>
+
+            {/* Item 2 */}
+            <div className="bg-gray-50 rounded-lg p-4 text-center border border-gray-200">
+              <p className="text-sm md:text-base font-semibold text-gray-900">
+                Get personalized feedback
+              </p>
+            </div>
+
+            {/* Item 3 */}
+            <div className="bg-gray-50 rounded-lg p-4 text-center border border-gray-200">
+              <p className="text-sm md:text-base font-semibold text-gray-900">
+                Give presentations
+              </p>
+            </div>
+
+            {/* Item 4 */}
+            <div className="bg-gray-50 rounded-lg p-4 text-center border border-gray-200">
+              <p className="text-sm md:text-base font-semibold text-gray-900">
+                Write essays and outlines
+              </p>
+            </div>
+
+            {/* Item 5 */}
+            <div className="bg-gray-50 rounded-lg p-4 text-center border border-gray-200">
+              <p className="text-sm md:text-base font-semibold text-gray-900">
+                Discuss videos and readings
+              </p>
+            </div>
+
+            {/* Item 6 */}
+            <div className="bg-gray-50 rounded-lg p-4 text-center border border-gray-200">
+              <p className="text-sm md:text-base font-semibold text-gray-900">
+                Interview other students
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center mb-6">
+            <p className="text-sm md:text-base text-gray-600 font-medium">
+              No textbooks, no exams, no memorizing rules
+            </p>
+          </div>
+
           {/* CTA Button */}
-          <div className="text-center mt-6">
+          <div className="text-center">
             <button
               onClick={scrollToApply}
               className="bg-[#dc5d33] text-white font-bold text-base px-6 py-3 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
             >
-              I want real practice
+              I want to use English in real life
             </button>
           </div>
         </div>
