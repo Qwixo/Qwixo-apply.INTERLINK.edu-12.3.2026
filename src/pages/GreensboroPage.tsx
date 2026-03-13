@@ -555,7 +555,7 @@ function GreensboroPage() {
                 </p>
                 <div className="space-y-1 text-xs text-gray-700">
                   <p>• 9:30–11:30 AM (Reading & Writing)</p>
-                  <p>• 12:30–2:30 PM (Communication Skils)</p>
+                  <p>• 12:30–2:30 PM (Communication Skills)</p>
                 </div>
               </div>
             </div>
