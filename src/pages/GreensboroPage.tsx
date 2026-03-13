@@ -287,7 +287,7 @@ function GreensboroPage() {
 
                 <div className="space-y-3 mb-5">
                   <p className="text-base text-gray-700">
-                    The truth: Most English programs and free lessons teach grammar rules, not how to communicate confidently in the situations that actually matter to you: at your job, in your classes, in your daily life in the U.S.
+                    Most English programs and free lessons teach grammar rules, not how to communicate confidently in the situations that actually matter to you: at your job, in your classes, in your daily life in the U.S.
                   </p>
                   <p className="text-base text-gray-700 font-semibold">
                     What you actually need are skills you can start using tomorrow.
