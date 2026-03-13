@@ -282,7 +282,7 @@ function GreensboroPage() {
                 </div>
 
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                  More practice. Every day.
+                  An English program that works.
                 </h2>
 
                 <div className="space-y-3 mb-5">
