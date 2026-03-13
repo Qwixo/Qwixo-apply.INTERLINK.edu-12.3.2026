@@ -532,19 +532,19 @@ function GreensboroPage() {
               </div>
 
               {/* UNCG / Online Badge */}
-              <div className="md:ml-6 shrink-0">
-                <div className="inline-flex flex-col items-center text-center bg-[#f8fafc] border-2 border-[#064088] rounded-2xl px-5 py-4 shadow-sm min-w-[220px]">
-                  <p className="text-[11px] font-semibold uppercase tracking-wide text-[#064088] mb-1">
-                    Study Format
-                  </p>
-                  <p className="text-base font-bold text-gray-900 leading-tight">
-                    On campus at UNCG
-                  </p>
-                  <p className="text-sm text-gray-600 mt-1">
-                    or online
-                  </p>
-                </div>
-              </div>
+<div className="md:ml-6 shrink-0">
+  <div className="inline-flex flex-col items-center text-center bg-white border-2 border-[#dc5d33] rounded-full w-[180px] h-[180px] justify-center shadow-md">
+    <p className="text-[11px] font-semibold uppercase tracking-wide text-[#dc5d33] mb-1">
+      Classes Available
+    </p>
+    <p className="text-base font-bold text-gray-900 leading-tight px-4">
+      On campus at UNCG
+    </p>
+    <p className="text-sm text-gray-600 mt-1">
+      or online
+    </p>
+  </div>
+</div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto mb-4">
