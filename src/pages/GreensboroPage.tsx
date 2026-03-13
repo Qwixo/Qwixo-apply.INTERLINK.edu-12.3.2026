@@ -88,7 +88,7 @@ function GreensboroPage() {
         >
           <div className="max-w-7xl mx-auto flex items-center justify-center relative">
             <p className="text-xs md:text-sm leading-tight text-center group-hover:underline">
-              Save up to $340 on Spring I (Apr 1–May 8) if you apply by March 18.
+              Save up to $340 on Spring II (May 12 – Jun 17) if you apply by April 28.
             </p>
             <button
               onClick={handleCloseBanner}
@@ -737,7 +737,7 @@ function GreensboroPage() {
         <p><span className="font-semibold">Part-time:</span> $850 / term (2 hours/day, Monday–Friday)</p>
         <p><span className="font-semibold">Application Fee:</span> $100 for in-person / $50 for online</p>
         <p className="text-xs pt-2 border-t border-blue-200 mt-2">
-          <span className="font-semibold">Spring I discount:</span> Save $340 on full-time ($1,360) or $170 on part-time ($680). Apply by March 18.
+          <span className="font-semibold">Spring II discount:</span> Save $340 on full-time ($1,360) or $170 on part-time ($680). Apply by March 18.
           <br />
           <span className="font-semibold">Continuing student savings:</span> Students who continue into the next term may be eligible for additional savings.
         </p>
