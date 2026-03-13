@@ -669,14 +669,14 @@ function GreensboroPage() {
 
           {/* Mobile Cards */}
           <div className="md:hidden space-y-3 mb-5">
-            {/* Spring I */}
+            {/* Spring II */}
             <div className="bg-red-50 border border-red-200 rounded-xl p-3 shadow-sm">
               <div className="flex items-center gap-2 mb-1">
-                <span className="font-semibold text-gray-900 text-sm">Spring I 2026</span>
+                <span className="font-semibold text-gray-900 text-sm">Spring II 2026</span>
                 <span className="bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded-full">20% OFF</span>
               </div>
-              <p className="text-xs text-gray-700">Dates: Apr 1 – May 8</p>
-              <p className="text-xs text-gray-700 mb-1">Apply by: March 18</p>
+              <p className="text-xs text-gray-700">Dates: May 12 – Jun 17</p>
+              <p className="text-xs text-gray-700 mb-1">Apply by: April 28</p>
               <div className="font-bold text-gray-900 text-sm">
                 Full-time: $1,360
                 <span className="text-xs text-gray-500 font-normal"> (was $1,700)</span>
@@ -688,14 +688,6 @@ function GreensboroPage() {
               <div className="text-xs text-red-600 font-semibold">Save up to $340</div>
             </div>
 
-            {/* Spring II */}
-            <div className="bg-white border border-gray-200 rounded-xl p-3 shadow-sm">
-              <div className="font-semibold text-gray-900 text-sm mb-1">Spring II 2026</div>
-              <p className="text-xs text-gray-700">Dates: May 12 – Jun 17</p>
-              <p className="text-xs text-gray-700 mb-1">Apply by: April 28</p>
-              <div className="font-bold text-gray-900 text-sm">Full-time: $1,700</div>
-              <div className="text-xs text-gray-600">Part-time: $850</div>
-            </div>
 
             {/* Summer */}
             <div className="bg-white border border-gray-200 rounded-xl p-3 shadow-sm">
