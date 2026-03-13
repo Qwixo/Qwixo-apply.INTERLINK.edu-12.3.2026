@@ -619,16 +619,6 @@ function GreensboroPage() {
                   </td>
                 </tr>
 
-                {/* Spring II */}
-                <tr className="border-b border-gray-200">
-                  <td className="px-4 py-3 font-bold text-gray-900">Spring II 2026</td>
-                  <td className="px-4 py-3 text-gray-700">May 12 – Jun 17</td>
-                  <td className="px-4 py-3 text-gray-700">April 28</td>
-                  <td className="px-4 py-3">
-                    <div className="font-bold text-gray-900">Full-time: $1,700</div>
-                    <div className="text-xs text-gray-600">Part-time: $850</div>
-                  </td>
-                </tr>
 
                 {/* Summer */}
                 <tr className="border-b border-gray-200">
