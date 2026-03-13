@@ -252,7 +252,7 @@ function GreensboroPage() {
 <p className="text-sm text-gray-700 font-bold">
   It isn't because you're not smart.
 </p>
-                  <p className="text-sm text-gray-700 mt-2">
+                  <p className="text-sm text-gray-900 mt-2">
                     Your English is good enough to get by, but not yet where you need it to be.
                   </p>
                 </div>
