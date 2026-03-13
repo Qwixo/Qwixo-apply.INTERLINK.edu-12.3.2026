@@ -512,39 +512,22 @@ function GreensboroPage() {
       {/* Section 5: Intensive Practice */}
       <section className="bg-gray-50 py-10 md:py-12">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="bg-white rounded-2xl shadow-sm p-6 md:p-8 relative">
-            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-5">
-              <div className="text-center md:text-left flex-1">
-                <p className="text-xs font-semibold text-[#064088] tracking-wide uppercase mb-2">
-                  INTENSIVE PROGRAM
+          <div className="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+            <div className="text-center mb-5">
+              <p className="text-xs font-semibold text-[#064088] tracking-wide uppercase mb-2">
+                INTENSIVE PROGRAM
+              </p>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+                5 days/week. Expert teachers. Personalized feedback.
+              </h2>
+              <div className="max-w-2xl mx-auto space-y-1">
+                <p className="text-base text-gray-700">
+                  One class per week won't help you progress quickly. At INTERLINK, our daily classes provide regular practice to help solidify your skills
                 </p>
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
-                  5 days/week. Expert teachers. Personalized feedback.
-                </h2>
-                <div className="max-w-2xl md:max-w-none space-y-1 mx-auto md:mx-0">
-                  <p className="text-base text-gray-700">
-                    One class per week won't help you progress quickly. At INTERLINK, our daily classes provide regular practice to help solidify your skills
-                  </p>
-                  <p className="text-xs text-gray-600 mt-2 font-medium">
-                    Times are Eastern Time
-                  </p>
-                </div>
+                <p className="text-xs text-gray-600 mt-2 font-medium">
+                  Times are Eastern Time
+                </p>
               </div>
-
-              {/* UNCG / Online Badge */}
-<div className="md:ml-6 shrink-0">
-  <div className="inline-flex flex-col items-center text-center bg-white border-2 border-[#dc5d33] rounded-full w-[180px] h-[180px] justify-center shadow-md">
-    <p className="text-[11px] font-semibold uppercase tracking-wide text-[#dc5d33] mb-1">
-      Classes Available
-    </p>
-    <p className="text-base font-bold text-gray-900 leading-tight px-4">
-      On campus at UNCG
-    </p>
-    <p className="text-sm text-gray-600 mt-1">
-      or online
-    </p>
-  </div>
-</div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto mb-4">
@@ -572,7 +555,7 @@ function GreensboroPage() {
                 </p>
                 <div className="space-y-1 text-xs text-gray-700">
                   <p>• 9:30–11:30 AM (Reading & Writing)</p>
-                  <p>• 12:30–2:30 PM (Communication Skills)</p>
+                  <p>• 12:30–2:30 PM (Communication Skils)</p>
                 </div>
               </div>
             </div>
