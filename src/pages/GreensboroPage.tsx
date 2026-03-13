@@ -250,9 +250,9 @@ function GreensboroPage() {
               <div className="flex flex-col justify-center">
                 <div className="bg-blue-50 border border-blue-100 rounded-xl p-4 mb-4">
                   <h3 className="text-base font-bold text-gray-900 mb-2">The truth</h3>
-                  <p className="text-sm text-gray-700">
-                    It isn't because you're not smart.
-                  </p>
+<p className="text-sm text-gray-700 font-bold">
+  It isn't because you're not smart.
+</p>
                   <p className="text-sm text-gray-700 mt-2">
                     Your English is good enough to get by, but not yet where you need it to be.
                   </p>
