@@ -598,14 +598,14 @@ function GreensboroPage() {
                 <tr className="border-b border-gray-200 bg-red-50">
                   <td className="px-4 py-3">
                     <div className="flex items-center gap-2">
-                      <span className="font-bold text-gray-900">Spring I 2026</span>
+                      <span className="font-bold text-gray-900">Spring II 2026</span>
                       <span className="inline-block bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded-full">
                         20% OFF
                       </span>
                     </div>
                   </td>
-                  <td className="px-4 py-3 text-gray-700">Apr 1 – May 8</td>
-                  <td className="px-4 py-3 text-gray-700">March 18</td>
+                  <td className="px-4 py-3 text-gray-700">May 12 – Jun 17</td>
+                  <td className="px-4 py-3 text-gray-700">April 28</td>
                   <td className="px-4 py-3">
                     <div className="font-bold text-gray-900">
                       Full-time: $1,360
