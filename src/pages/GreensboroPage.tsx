@@ -424,6 +424,12 @@ function GreensboroPage() {
       <section className="bg-white py-8 md:py-10">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-6">
+            <p className="text-sm md:text-base font-semibold text-[#dc5d33] mb-2">
+              Study English on campus at UNCG
+            </p>
+            <p className="text-sm md:text-base text-gray-600 mb-3">
+              Online classes also available
+            </p>
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
               What you will do in class
             </h3>
@@ -476,14 +482,14 @@ function GreensboroPage() {
             </div>
           </div>
 
-          <div className="text-center mb-6">
+          <div className="text-center mb-4">
             <p className="text-sm md:text-base text-gray-600 font-medium">
               No textbooks, no exams, no memorizing rules
             </p>
           </div>
 
           {/* CTA Button */}
-          <div className="text-center">
+          <div className="text-center mb-5">
             <button
               onClick={scrollToApply}
               className="bg-[#dc5d33] text-white font-bold text-base px-6 py-3 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
@@ -491,11 +497,16 @@ function GreensboroPage() {
               I want to use English in real life
             </button>
           </div>
+
+          <div className="text-center">
+            <p className="text-sm md:text-base text-gray-600 italic font-medium max-w-4xl mx-auto">
+              Our online and on-campus classes include the same interactive classes and engaging projects.
+            </p>
+          </div>
         </div>
       </section>
 
       <Real_Testimonials guideStyle />
-
       {/* Section 5: Intensive Practice */}
       <section className="bg-gray-50 py-10 md:py-12">
         <div className="max-w-6xl mx-auto px-4">
