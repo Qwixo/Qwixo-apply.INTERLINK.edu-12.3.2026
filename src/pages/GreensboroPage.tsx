@@ -249,7 +249,7 @@ function GreensboroPage() {
               {/* Right Column */}
               <div className="flex flex-col justify-center">
                 <div className="bg-blue-50 border border-blue-100 rounded-xl p-4 mb-4">
-<p className="text-sm text-gray-700 font-bold">
+<p className="text-sm text-gray-900 font-bold">
   It isn't because you're not smart.
 </p>
                   <p className="text-sm text-gray-900 mt-2">
