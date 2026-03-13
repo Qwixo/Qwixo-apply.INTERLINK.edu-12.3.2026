@@ -747,16 +747,42 @@ function GreensboroPage() {
 
 {/* Pricing Note Box */}
 <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 md:p-5 mb-5">
-  <h3 className="font-bold text-gray-900 mb-2 text-sm">Tuition and fees</h3>
-  <div className="space-y-1 text-gray-700 text-sm">
-    <p><span className="font-semibold">Full-time:</span> $1,700 / term (4 hours/day, Monday–Friday)</p>
-    <p><span className="font-semibold">Part-time:</span> $850 / term (2 hours/day, Monday–Friday)</p>
-    <p><span className="font-semibold">Application Fee:</span> $100 for in-person / $50 for online</p>
-    <p className="text-xs pt-2 border-t border-blue-200 mt-2">
-      <span className="font-semibold">Spring I discount:</span> Save $340 on full-time ($1,360) or $170 on part-time ($680). Apply by March 18.
-      <br />
-      <span className="font-semibold">Continuing student savings:</span> Students who continue into the next term may be eligible for additional savings.
-    </p>
+  <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-5">
+    {/* Left: Tuition and fees text */}
+    <div className="flex-1 min-w-0">
+      <h3 className="font-bold text-gray-900 mb-2 text-sm">Tuition and fees</h3>
+      <div className="space-y-1 text-gray-700 text-sm">
+        <p><span className="font-semibold">Full-time:</span> $1,700 / term (4 hours/day, Monday–Friday)</p>
+        <p><span className="font-semibold">Part-time:</span> $850 / term (2 hours/day, Monday–Friday)</p>
+        <p><span className="font-semibold">Application Fee:</span> $100 for in-person / $50 for online</p>
+        <p className="text-xs pt-2 border-t border-blue-200 mt-2">
+          <span className="font-semibold">Spring I discount:</span> Save $340 on full-time ($1,360) or $170 on part-time ($680). Apply by March 18.
+          <br />
+          <span className="font-semibold">Continuing student savings:</span> Students who continue into the next term may be eligible for additional savings.
+        </p>
+      </div>
+    </div>
+
+    {/* Right: UNCG / Online badges */}
+    <div className="shrink-0 flex flex-col sm:flex-row md:flex-col gap-3 md:w-[220px]">
+      <div className="bg-white border-2 border-[#064088] rounded-xl px-4 py-4 text-center shadow-sm">
+        <p className="text-[11px] font-semibold uppercase tracking-wide text-[#064088] mb-1">
+          Study Format
+        </p>
+        <p className="text-sm font-bold text-gray-900 leading-tight">
+          On campus at UNCG
+        </p>
+      </div>
+
+      <div className="bg-white border-2 border-[#dc5d33] rounded-xl px-4 py-4 text-center shadow-sm">
+        <p className="text-[11px] font-semibold uppercase tracking-wide text-[#dc5d33] mb-1">
+          Also Available
+        </p>
+        <p className="text-sm font-bold text-gray-900 leading-tight">
+          Online classes
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 
