@@ -246,16 +246,16 @@ function GreensboroPage() {
                 </div>
               </div>
 
-              {/* Right Column */}
-              <div className="flex flex-col justify-center">
-                <div className="bg-blue-50 border border-blue-100 rounded-xl p-4 mb-4">
-<p className="text-sm text-gray-900 font-bold">
-  It isn't because you're not smart.
-</p>
-                  <p className="text-sm text-gray-900 mt-2">
-                    Your English is good enough to get by, but not yet where you need it to be.
-                  </p>
-                </div>
+{/* Right Column */}
+<div className="flex flex-col justify-center">
+  <div className="bg-blue-50 border border-blue-100 rounded-xl p-4 mb-4">
+    <p className="text-base text-gray-900 font-bold">
+      It isn't because you're not smart.
+    </p>
+    <p className="text-sm text-gray-900 mt-2">
+      Your English is good enough to get by, but not yet where you need it to be.
+    </p>
+  </div>
 
                 <button
                   onClick={scrollToApply}
