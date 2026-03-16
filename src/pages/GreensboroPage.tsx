@@ -106,7 +106,7 @@ function GreensboroPage() {
       UTM_CAMP: utmParams.utm_campaign,
       UTM_TERM: utmParams.utm_term,
       UTM_CONT: utmParams.utm_content,
-      tags: '10280938',
+      tags: '10282241,10280938',
       b_607289d66021f9dbd8e30d04c_f16b13f8cc: '',
     };
 
