@@ -4,10 +4,18 @@ import Real_Testimonials from '../components/Real_Testimonials';
 import { Users, Globe, Calendar, MapPin, User, MessageSquare, Presentation, HelpCircle, BookOpen, Lightbulb, Check, ChevronDown, X, Film } from 'lucide-react';
 
 const APPLICATION_URL = "https://server1.orbund.com/einstein-freshair/touch/application/online_application_form.jsp?id=59&aid=67";
+const MAILCHIMP_ACTION = "https://interlink.us11.list-manage.com/subscribe/post?u=607289d66021f9dbd8e30d04c&id=f16b13f8cc&f_id=0029d7e3f0";
+
+const COMMITMENT_LABELS: Record<string, string> = {
+  yes: 'Yes',
+  maybe: "I'm not sure yet",
+  'not-now': 'Maybe later',
+};
 
 function GreensboroPage() {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [formLoading, setFormLoading] = useState(false);
   const [showBanner, setShowBanner] = useState(true);
   const [formData, setFormData] = useState({
     firstName: '',
@@ -15,9 +23,32 @@ function GreensboroPage() {
     email: '',
     commitment: ''
   });
+  const [utmParams, setUtmParams] = useState({
+    utm_source: '',
+    utm_medium: '',
+    utm_campaign: '',
+    utm_term: '',
+    utm_content: '',
+  });
 
   useEffect(() => {
     document.title = 'Learn English on campus in Greensboro - INTERLINK';
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'] as const;
+    const captured: Record<string, string> = {};
+
+    keys.forEach((key) => {
+      const val = urlParams.get(key);
+      if (val) {
+        localStorage.setItem(key, val);
+        captured[key] = val;
+      } else {
+        captured[key] = localStorage.getItem(key) || '';
+      }
+    });
+
+    setUtmParams(captured as typeof utmParams);
   }, []);
 
   const scrollToApply = () => {
@@ -52,35 +83,65 @@ function GreensboroPage() {
     }));
   };
 
-  const handleFormSubmit = async (e: React.FormEvent) => {
+  const submitToMailchimp = () => {
+    const iframe = document.createElement('iframe');
+    iframe.name = 'mc-hidden-iframe';
+    iframe.style.display = 'none';
+    document.body.appendChild(iframe);
+
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = MAILCHIMP_ACTION;
+    form.target = 'mc-hidden-iframe';
+    form.style.display = 'none';
+
+    const fields: Record<string, string> = {
+      EMAIL: formData.email,
+      FNAME: formData.firstName,
+      LNAME: formData.lastName,
+      '5DAYSREADY': COMMITMENT_LABELS[formData.commitment] || formData.commitment,
+      WHOSE_LEAD: 'Yes',
+      UTM_SOURCE: utmParams.utm_source,
+      UTM_MEDIUM: utmParams.utm_medium,
+      UTM_CAMP: utmParams.utm_campaign,
+      UTM_TERM: utmParams.utm_term,
+      UTM_CONT: utmParams.utm_content,
+      tags: '10280938',
+      b_607289d66021f9dbd8e30d04c_f16b13f8cc: '',
+    };
+
+    Object.entries(fields).forEach(([name, value]) => {
+      const input = document.createElement('input');
+      input.type = 'hidden';
+      input.name = name;
+      input.value = value;
+      form.appendChild(input);
+    });
+
+    document.body.appendChild(form);
+    form.submit();
+
+    setTimeout(() => {
+      document.body.removeChild(form);
+      document.body.removeChild(iframe);
+    }, 5000);
+  };
+
+  const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    setFormLoading(true);
 
-    const data = new URLSearchParams();
-    data.append('u', '607289d66021f9dbd8e30d04c');
-    data.append('id', 'f16b13f8cc');
-    data.append('FNAME', formData.firstName);
-    data.append('LNAME', formData.lastName);
-    data.append('EMAIL', formData.email);
-    data.append('MMERGE13', 'greensboro-application');
+    submitToMailchimp();
 
-    try {
-      await fetch('https://interlink.us11.list-manage.com/subscribe/post', {
-        method: 'POST',
-        mode: 'no-cors',
-        body: data,
-      });
-
-      if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
-        (window as any).gtag('event', 'conversion', {
-          send_to: 'AW-1043003990/gNYTCOqGlLQaENb0q_ED',
-        });
-      }
-
-      setFormSubmitted(true);
-    } catch (error) {
-      console.error('Form submission error:', error);
-      setFormSubmitted(true);
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'Lead');
     }
+
+    setTimeout(() => {
+      window.open(APPLICATION_URL, '_blank', 'noopener,noreferrer');
+      setFormSubmitted(true);
+      setFormLoading(false);
+    }, 1800);
   };
 
   return (
@@ -1030,7 +1091,17 @@ function GreensboroPage() {
       <section id="apply" className="bg-gray-50 py-10 md:py-14">
         <div className="max-w-2xl mx-auto px-4">
           <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
-            {!formSubmitted ? (
+            {formLoading ? (
+              <div className="text-center py-8">
+                <div className="flex justify-center mb-4">
+                  <svg className="animate-spin h-10 w-10 text-[#dc5d33]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                  </svg>
+                </div>
+                <p className="text-base font-semibold text-gray-700">Checking your application...</p>
+              </div>
+            ) : !formSubmitted ? (
               <>
                 <div className="text-center mb-5">
                   <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
@@ -1109,7 +1180,8 @@ function GreensboroPage() {
 
                   <button
                     type="submit"
-                    className="w-full bg-[#dc5d33] text-white font-bold text-base px-6 py-3 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
+                    disabled={formLoading}
+                    className="w-full bg-[#dc5d33] text-white font-bold text-base px-6 py-3 rounded-lg shadow-lg hover:bg-[#c24e2b] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5 disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none"
                   >
                     Continue to official application
                   </button>
