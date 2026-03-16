@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Real_Testimonials from '../components/Real_Testimonials';
 import { Users, Globe, Calendar, MapPin, User, MessageSquare, Presentation, HelpCircle, BookOpen, Lightbulb, Check, ChevronDown, X, Film } from 'lucide-react';
 
-const APPLICATION_URL = "https://interlink.edu/student-application/";
+const APPLICATION_URL = "https://server1.orbund.com/einstein-freshair/touch/application/online_application_form.jsp?id=59&aid=67";
 
 function GreensboroPage() {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
