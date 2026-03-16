@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Real_Testimonials from '../components/Real_Testimonials';
 import { Users, Globe, Calendar, MapPin, User, MessageSquare, Presentation, HelpCircle, BookOpen, Lightbulb, Check, ChevronDown, X, Film } from 'lucide-react';
@@ -15,6 +15,10 @@ function GreensboroPage() {
     email: '',
     commitment: ''
   });
+
+  useEffect(() => {
+    document.title = 'Learn English on campus in Greensboro - INTERLINK';
+  }, []);
 
   const scrollToApply = () => {
     const applySection = document.getElementById('apply');
